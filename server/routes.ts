@@ -55,82 +55,82 @@ async function seedDatabase() {
   if (existingProducts.length === 0) {
     const seedProducts = [
       {
-        name: "Corrugated Shipping Box",
-        description: "Heavy-duty double-wall corrugated boxes ideal for shipping industrial parts and equipment. Customizable dimensions and strength ratings.",
-        category: "Boxes",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
-        specifications: {
-          "Material": "Double-wall corrugated cardboard",
-          "Strength": "ECT-44",
-          "Dimensions": "Custom",
-          "Print": "Flexographic up to 3 colors"
-        },
-        features: ["Recyclable", "Heavy Duty", "Stackable"]
-      },
-      {
-        name: "Industrial Kraft Paper Bag",
-        description: "Multi-wall kraft paper bags designed for bulk materials like cement, flour, and chemicals. Moisture resistant options available.",
+        name: "Woven Polypropylene Sacks",
+        description: "Strong, durable woven bags for bulk storage and transport of grains, fertilizers, and building materials. UV stabilized for long-term outdoor storage.",
         category: "Bags",
-        imageUrl: "https://images.unsplash.com/photo-1605634691459-0a562499d349",
+        imageUrl: "https://images.unsplash.com/photo-1595246140625-573b715d11dc",
         specifications: {
-          "Material": "Virgin Kraft Paper",
-          "Ply": "2-4 ply",
-          "Capacity": "25kg - 50kg",
-          "Valve": "Internal sleeve valve"
+          "Material": "UV Stabilized Polypropylene",
+          "Strength": "High-tensile woven fabric",
+          "Dimensions": "Custom sizes available",
+          "Print": "BOPP or Flexo printing"
         },
-        features: ["Tear Resistant", "Biodegradable", "Food Grade Available"]
+        features: ["Tear Resistant", "Breathable", "Reusable"]
       },
       {
-        name: "Industrial Stretch Film",
-        description: "High-performance stretch film for palletizing and securing loads. Excellent puncture resistance and load retention.",
-        category: "Materials",
-        imageUrl: "https://images.unsplash.com/photo-1628135805779-78096f9c9432",
+        name: "Bulk Bags (FIBC)",
+        description: "Flexible Intermediate Bulk Containers (FIBC) for industrial-scale transport of dry, flowable products. Certified for safe handling and stackability.",
+        category: "Bags",
+        imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
         specifications: {
-          "Gauge": "80 gauge",
-          "Width": "18 inches",
-          "Length": "1500 feet",
-          "Type": "Cast Stretch Film"
+          "Material": "Heavy-duty Woven PP",
+          "SWL": "500kg - 2000kg",
+          "Safety Factor": "5:1 or 6:1",
+          "Loops": "4 Standard Lifting Loops"
         },
-        features: ["Clear Transparency", "High Elongation", "Quiet Unwind"]
+        features: ["U-Panel Construction", "Dust Proof Seams", "Liner Available"]
       },
       {
-        name: "Custom Printed Mailer",
-        description: "Branded mailer boxes for e-commerce and subscription boxes. High-quality print finish to enhance unboxing experience.",
-        category: "Custom",
-        imageUrl: "https://images.unsplash.com/photo-1628608823528-7694f475d400",
+        name: "BOPP Laminated Bags",
+        description: "High-gloss, photographic quality printed bags for retail packaging. Provides excellent moisture barrier and superior shelf appeal.",
+        category: "Bags",
+        imageUrl: "https://images.unsplash.com/photo-1544816155-12df9643f363",
         specifications: {
-          "Material": "E-flute corrugated",
-          "Print": "Digital or Offset",
-          "Finish": "Matte or Gloss",
-          "MOQ": "500 units"
+          "Material": "BOPP Laminated Woven PP",
+          "Printing": "Reverse Rotogravure",
+          "Finish": "Gloss or Matte",
+          "Capacity": "5kg - 50kg"
         },
-        features: ["Self-locking", "Full Color Print", "Eco-friendly Ink"]
+        features: ["Waterproof", "Vibrant Graphics", "Puncture Resistant"]
       },
-       {
-        name: "Heavy Duty Wooden Crate",
-        description: "Custom built wooden crates for export and heavy machinery. ISPM-15 certified for international shipping.",
-        category: "Boxes",
-        imageUrl: "https://images.unsplash.com/photo-1585644198038-164406208a3d",
+      {
+        name: "Potato & Fruit Mesh Bags",
+        description: "Leno mesh bags providing maximum ventilation for fresh produce. Soft but strong enough to handle weight without bruising content.",
+        category: "Mesh",
+        imageUrl: "https://images.unsplash.com/photo-1518843875459-f738682238a6",
         specifications: {
-          "Material": "Heat-treated Pine",
-          "Certification": "ISPM-15",
-          "Load Capacity": "Up to 5000kg",
-          "Assembly": "Nailed or Screwed"
+          "Material": "Polyethylene (HDPE)",
+          "Type": "Leno Mesh",
+          "Capacity": "2kg - 25kg",
+          "Colors": "Red, Orange, Yellow, Purple"
         },
-        features: ["Export Ready", "Reusable", "Forklift Access"]
+        features: ["Highly Breathable", "Drawstring Closure", "Lightweight"]
       },
-       {
-        name: "Protective Bubble Wrap",
-        description: "Air-cushioned bubble wrap for protecting fragile items during transit. Available in rolls or sheets.",
+      {
+        name: "Agricultural Shade Cloth",
+        description: "Knitted HDPE fabric for crop protection and nursery use. Provides consistent shade percentages and wind protection.",
         category: "Materials",
-        imageUrl: "https://images.unsplash.com/photo-1595079676614-7935c11d87e1",
+        imageUrl: "https://images.unsplash.com/photo-1622383563227-04401ab4e5ea",
         specifications: {
-          "Bubble Size": "10mm (Small) or 25mm (Large)",
-          "Roll Width": "300mm - 1500mm",
-          "Material": "LDPE",
-          "Anti-static": "Available"
+          "Material": "HDPE Monofilament",
+          "Shade %": "20% - 80%",
+          "UV Life": "5+ years",
+          "Width": "1.5m - 6m"
         },
-        features: ["Lightweight", "Shock Absorbing", "Flexible"]
+        features: ["UV Resistant", "Fray Proof", "Temperature Control"]
+      },
+      {
+        name: "Pallet Wrap & Shrink Film",
+        description: "Industrial strength pallet wrap for securing loads. High clarity for easy barcode scanning and superior cling properties.",
+        category: "Materials",
+        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        specifications: {
+          "Material": "LLDPE",
+          "Thickness": "17mic - 25mic",
+          "Width": "450mm - 500mm",
+          "Stretch": "Up to 300%"
+        },
+        features: ["Silent Unwind", "High Clarity", "Puncture Resistant"]
       }
     ];
 
