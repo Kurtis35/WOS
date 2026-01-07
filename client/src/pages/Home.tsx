@@ -43,11 +43,11 @@ export default function Home() {
                   <Package className="mr-2 h-5 w-5" /> PRODUCTS
                 </Button>
               </Link>
-              <Link href="#contact">
+              <a href="https://apex.w-o-s.co.za" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-8">
-                  <Phone className="mr-2 h-5 w-5" /> CONTACT US
+                  <Phone className="mr-2 h-5 w-5" /> WOS APEX
                 </Button>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

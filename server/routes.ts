@@ -54,11 +54,11 @@ async function seedDatabase() {
   const existingProducts = await storage.getProducts();
   if (existingProducts.length === 0) {
     const seedProducts = [
-      // Packaging Material - Pallets
+      // Packaging Material
       {
         name: "Black Block Local Pallet",
         description: "Standard black block pallet designed for local industrial storage and transport within South Africa.",
-        category: "Pallets",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
         specifications: { "Type": "Local", "Color": "Black", "Material": "Reinforced Wood/Plastic" },
         features: ["Local Transport", "Heavy Duty"]
@@ -66,7 +66,7 @@ async function seedDatabase() {
       {
         name: "Blue Block Local Pallet",
         description: "Durable blue block pallet for local supply chain operations.",
-        category: "Pallets",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
         specifications: { "Type": "Local", "Color": "Blue", "Material": "Reinforced Wood/Plastic" },
         features: ["Color Coded", "Industrial Strength"]
@@ -74,16 +74,15 @@ async function seedDatabase() {
       {
         name: "Black Block Export Pallet",
         description: "Export-grade black block pallet, heat-treated and certified for international shipping.",
-        category: "Pallets",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
         specifications: { "Type": "Export", "Color": "Black", "Certification": "ISPM-15" },
         features: ["International Shipping", "Heat Treated"]
       },
-      // Cartons/Boxes
       {
         name: "9kg Gen Jumblekraft (2 col)",
         description: "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
-        category: "Cartons/Boxes",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
         specifications: { "Capacity": "9kg", "Color": "Kraft", "Columns": "2" },
         features: ["Produce Packaging", "Breathable"]
@@ -91,7 +90,7 @@ async function seedDatabase() {
       {
         name: "MK9 Gen Jumble White (4 col)",
         description: "A white, 4-column jumble box, likely for larger produce like apples or pears.",
-        category: "Cartons/Boxes",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
         specifications: { "Capacity": "9kg+", "Color": "White", "Columns": "4" },
         features: ["Premium Finish", "Large Capacity"]
@@ -99,16 +98,16 @@ async function seedDatabase() {
       {
         name: "MK4 E/V Gen Outer White (4 col)",
         description: "A white, 4-column outer box for E/V (Export/Import) purposes.",
-        category: "Cartons/Boxes",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
         specifications: { "Type": "Outer Box", "Color": "White", "Purpose": "E/V" },
         features: ["Export Grade", "High Visibility"]
       },
-      // Safety Equipment - Footwear
+      // Safety Equipment
       {
         name: "Interceptor Askari Lo II Smooth",
         description: "Low-cut smooth finish safety shoe designed for comfort and professional appearance without compromising safety.",
-        category: "Footwear",
+        category: "Safety Equipment",
         imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6de271560",
         specifications: { "Brand": "Interceptor", "Style": "Lo II Smooth", "Type": "Safety Shoe" },
         features: ["Smooth Leather", "Steel Toe", "Anti-slip"]
@@ -116,16 +115,16 @@ async function seedDatabase() {
       {
         name: "Interceptor Askari Mid",
         description: "Mid-cut safety boot providing additional ankle support for rugged industrial environments.",
-        category: "Footwear",
+        category: "Safety Equipment",
         imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6de271560",
         specifications: { "Brand": "Interceptor", "Style": "Mid", "Type": "Safety Boot" },
         features: ["Ankle Support", "High Durability"]
       },
-      // Clothing - Men
+      // Work Clothing
       {
         name: "Mens Performance Polo",
         description: "High-quality performance polo shirt for professional workplace appearance.",
-        category: "Work Clothing",
+        category: "Work/Promotional Clothing",
         imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
         specifications: { "Gender": "Men", "Type": "Polo", "Material": "Performance Fabric" },
         features: ["Moisture Wicking", "Corporate Branding Ready"]
@@ -133,21 +132,21 @@ async function seedDatabase() {
       {
         name: "Mens Adventure Jacket",
         description: "Rugged adventure jacket for outdoor work and industrial environments.",
-        category: "Work Clothing",
+        category: "Work/Promotional Clothing",
         imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
         specifications: { "Gender": "Men", "Type": "Jacket", "Style": "Adventure" },
         features: ["Weather Resistant", "Multiple Pockets"]
       },
-      // Clothing - Women
       {
         name: "Ladies Performance Polo",
         description: "Tailored performance polo shirt for women in the workplace.",
-        category: "Work Clothing",
+        category: "Work/Promotional Clothing",
         imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
         specifications: { "Gender": "Women", "Type": "Polo", "Material": "Performance Fabric" },
         features: ["Tailored Fit", "Corporate Branding Ready"]
       }
     ];
+
 
 
 
