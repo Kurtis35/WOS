@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useProducts } from "@/hooks/use-products";
 import { Button } from "@/components/ui/Button";
 import { Input } from "@/components/ui/input";
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal, ArrowRight } from "lucide-react";
 
 export default function ProductList() {
   const { data: products, isLoading } = useProducts();

@@ -20,12 +20,11 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="bg-primary text-white p-1.5 rounded-sm group-hover:bg-accent transition-colors">
-            <Package className="h-6 w-6" />
-          </div>
-          <span className="font-display font-bold text-xl tracking-tight uppercase">
-            WOS Packaging
-          </span>
+          <img 
+            src="https://files.cdn-files-a.com/uploads/7752700/400_filter_nobg_6953aaf5489bb.png" 
+            alt="W.O.S Packaging" 
+            className="h-12 w-auto"
+          />
         </Link>
 
         {/* Desktop Nav */}

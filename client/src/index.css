@@ -1,77 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* LIGHT MODE */
 :root {
-  /* Industrial/Minimal Palette */
-  /* Base - Zinc/Slate tones for that "factory/clean" look */
-  --background: 210 40% 98%;
-  --foreground: 222 47% 11%;
-  
-  /* Primary - Deep Technical Blue/Black */
-  --primary: 222 47% 11%;
-  --primary-foreground: 210 40% 98%;
-  
-  /* Secondary - Metallic Gray */
-  --secondary: 210 40% 96%;
-  --secondary-foreground: 222 47% 11%;
-  
-  /* Muted - For technical specs text */
-  --muted: 210 40% 96%;
-  --muted-foreground: 215 16% 47%;
-  
-  /* Accent - Safety Orange (subtle usage) */
-  --accent: 24 95% 53%;
-  --accent-foreground: 0 0% 100%;
-  
-  --destructive: 0 84% 60%;
-  --destructive-foreground: 210 40% 98%;
-  
-  --border: 214 32% 91%;
-  --input: 214 32% 91%;
-  --ring: 222 47% 11%;
-  
-  --radius: 0.25rem; /* Sharper corners for industrial feel */
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
 
-  /* Font Variables */
-  --font-sans: 'Inter', sans-serif;
-  --font-display: 'Space Grotesk', sans-serif;
+  /* Automatic computation of border around primary / danger buttons */
+  --opaque-button-border-intensity: -8; /* In terms of percentages */
+
+  /* Backgrounds applied on top of other backgrounds when hovered/active */
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
+
+  --primary: 209 56% 46%; /* #337AB7 */
+  --primary-foreground: 0 0% 100%;
+  
+  --accent: 1 44% 45%; /* #A94442 */
+  --accent-foreground: 0 0% 100%;
+
+  --background: 0 0% 100%;
+  --foreground: 0 0% 0%;
+
+  --border: 228 17% 87%; /* #D4D7E5 */
+  
+  --font-sans: 'Open Sans', sans-serif;
+  --font-display: 'Open Sans', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
 }
 
 .dark {
-  --background: 222 47% 11%;
-  --foreground: 210 40% 98%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222 47% 11%;
-  /* ... simplified dark mode mapping if needed ... */
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+
+  --background: 210 20% 5%;
+  --foreground: 210 20% 98%;
+  --border: 210 20% 15%;
+  --card: 210 20% 8%;
+  --card-foreground: 210 20% 98%;
+  --card-border: 210 20% 15%;
+  --sidebar: 210 20% 5%;
+  --sidebar-foreground: 210 20% 90%;
+  --sidebar-border: 210 20% 15%;
+  --sidebar-primary: 208 56% 46%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 20% 15%;
+  --sidebar-accent-foreground: 210 20% 98%;
+  --sidebar-ring: 208 56% 46%;
+  --popover: 210 20% 8%;
+  --popover-foreground: 210 20% 98%;
+  --popover-border: 210 20% 15%;
+  --primary: 208 56% 46%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 1 44% 46%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 210 20% 15%;
+  --muted-foreground: 210 20% 65%;
+  --accent: 1 44% 46%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 210 20% 98%;
+  --input: 210 20% 20%;
+  --ring: 208 56% 46%;
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground antialiased;
-    font-family: var(--font-sans);
-  }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-display);
-    @apply tracking-tight font-bold;
-  }
+  * { @apply border-border; }
+  body { @apply font-sans antialiased bg-background text-foreground; }
 }
 
-/* Custom Utilities */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-  
-  /* Industrial Grid Pattern Background */
-  .bg-grid-pattern {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
-                      linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
+  .hover-elevate { @apply relative transition-transform duration-200 hover:-translate-y-1; }
+  .active-elevate-2 { @apply relative transition-transform duration-100 active:scale-95; }
 }

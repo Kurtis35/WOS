@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Box, Recycle, Settings, Truck } from "lucide-react";
+import { ArrowRight, Box, Recycle, Settings, Truck, Package, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProducts } from "@/hooks/use-products";
 
@@ -11,76 +11,76 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* HERO SECTION */}
-      <section className="relative bg-primary text-primary-foreground overflow-hidden py-24 lg:py-32">
-        <div className="absolute inset-0 bg-grid-pattern opacity-10 pointer-events-none" />
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <h1 className="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
-                Packaging Solutions <br/>
-                <span className="text-gray-400">That Perform.</span>
+      <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80" 
+            alt="Warehouse" 
+            className="w-full h-full object-cover brightness-50"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10 text-white">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-2xl"
+          >
+            <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 rounded-sm mb-8 inline-block">
+              <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight mb-4">
+                Your Ultimate <br/>
+                Packaging Partner
               </h1>
-              <p className="text-xl text-gray-400 mb-8 max-w-lg">
-                Engineered for protection, designed for brand impact. 
-                WOS provides industrial-grade packaging for scaling businesses.
+              <p className="text-xl md:text-2xl font-medium text-gray-200">
+                TOP QUALITY PACKAGING AND WORKWEAR SOLUTIONS FOR YOU.
               </p>
-              <div className="flex gap-4">
-                <Link href="/products">
-                  <Button size="lg" variant="industrial" className="border-white text-white hover:bg-white hover:text-primary">
-                    View Catalog
-                  </Button>
-                </Link>
-                <Link href="#contact">
-                  <Button size="lg" variant="ghost" className="text-white hover:bg-white/10 hover:text-white">
-                    Contact Sales
-                  </Button>
-                </Link>
-              </div>
-            </motion.div>
+            </div>
+            <div className="flex gap-4">
+              <Link href="/products">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white border-none rounded-none px-8">
+                  <Package className="mr-2 h-5 w-5" /> PRODUCTS
+                </Button>
+              </Link>
+              <Link href="#contact">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-8">
+                  <Phone className="mr-2 h-5 w-5" /> CONTACT US
+                </Button>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </section>
 
-            <motion.div 
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="grid grid-cols-2 gap-4"
-            >
-              {/* Unsplash: Corrugated Boxes */}
-              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden relative">
-                 <img 
-                   src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80" 
-                   alt="Industrial Boxes" 
-                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                 />
+      {/* CATEGORIES SECTION */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            <Link href="/products?category=Bags" className="group">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" alt="Packaging" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Packaging Material</div>
               </div>
-              {/* Unsplash: Cardboard Stack */}
-              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden relative mt-8">
-                <img 
-                  src="https://images.unsplash.com/photo-1627409228809-5a507856f6c9?w=800&q=80" 
-                  alt="Packaging Materials" 
-                  className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                />
+            </Link>
+            <Link href="/products?category=Safety" className="group">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                <img src="https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" alt="Safety" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Safety Equipment</div>
               </div>
-              {/* Unsplash: Packaging Detail */}
-              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden relative -mt-8">
-                 <img 
-                   src="https://images.unsplash.com/photo-1605634289890-50b2847d0799?w=800&q=80" 
-                   alt="Sustainable Packaging" 
-                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                 />
+            </Link>
+            <Link href="/products?category=Clothing" className="group">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" alt="Clothing" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Work Clothing</div>
               </div>
-              {/* Unsplash: Warehouse */}
-              <div className="aspect-square bg-white/5 rounded-lg overflow-hidden relative">
-                 <img 
-                   src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" 
-                   alt="Warehouse Inventory" 
-                   className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
-                 />
-              </div>
-            </motion.div>
+            </Link>
           </div>
         </div>
       </section>
