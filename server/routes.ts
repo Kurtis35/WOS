@@ -54,85 +54,115 @@ async function seedDatabase() {
   const existingProducts = await storage.getProducts();
   if (existingProducts.length === 0) {
     const seedProducts = [
+      // Packaging Material
       {
-        name: "Woven Polypropylene Sacks",
-        description: "Strong, durable woven bags for bulk storage and transport of grains, fertilizers, and building materials. UV stabilized for long-term outdoor storage.",
-        category: "Bags",
-        imageUrl: "https://images.unsplash.com/photo-1595246140625-573b715d11dc",
-        specifications: {
-          "Material": "UV Stabilized Polypropylene",
-          "Strength": "High-tensile woven fabric",
-          "Dimensions": "Custom sizes available",
-          "Print": "BOPP or Flexo printing"
-        },
-        features: ["Tear Resistant", "Breathable", "Reusable"]
-      },
-      {
-        name: "Bulk Bags (FIBC)",
-        description: "Flexible Intermediate Bulk Containers (FIBC) for industrial-scale transport of dry, flowable products. Certified for safe handling and stackability.",
-        category: "Bags",
-        imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
-        specifications: {
-          "Material": "Heavy-duty Woven PP",
-          "SWL": "500kg - 2000kg",
-          "Safety Factor": "5:1 or 6:1",
-          "Loops": "4 Standard Lifting Loops"
-        },
-        features: ["U-Panel Construction", "Dust Proof Seams", "Liner Available"]
-      },
-      {
-        name: "BOPP Laminated Bags",
-        description: "High-gloss, photographic quality printed bags for retail packaging. Provides excellent moisture barrier and superior shelf appeal.",
-        category: "Bags",
-        imageUrl: "https://images.unsplash.com/photo-1544816155-12df9643f363",
-        specifications: {
-          "Material": "BOPP Laminated Woven PP",
-          "Printing": "Reverse Rotogravure",
-          "Finish": "Gloss or Matte",
-          "Capacity": "5kg - 50kg"
-        },
-        features: ["Waterproof", "Vibrant Graphics", "Puncture Resistant"]
-      },
-      {
-        name: "Potato & Fruit Mesh Bags",
-        description: "Leno mesh bags providing maximum ventilation for fresh produce. Soft but strong enough to handle weight without bruising content.",
-        category: "Mesh",
-        imageUrl: "https://images.unsplash.com/photo-1518843875459-f738682238a6",
-        specifications: {
-          "Material": "Polyethylene (HDPE)",
-          "Type": "Leno Mesh",
-          "Capacity": "2kg - 25kg",
-          "Colors": "Red, Orange, Yellow, Purple"
-        },
-        features: ["Highly Breathable", "Drawstring Closure", "Lightweight"]
-      },
-      {
-        name: "Agricultural Shade Cloth",
-        description: "Knitted HDPE fabric for crop protection and nursery use. Provides consistent shade percentages and wind protection.",
-        category: "Materials",
-        imageUrl: "https://images.unsplash.com/photo-1622383563227-04401ab4e5ea",
-        specifications: {
-          "Material": "HDPE Monofilament",
-          "Shade %": "20% - 80%",
-          "UV Life": "5+ years",
-          "Width": "1.5m - 6m"
-        },
-        features: ["UV Resistant", "Fray Proof", "Temperature Control"]
-      },
-      {
-        name: "Pallet Wrap & Shrink Film",
-        description: "Industrial strength pallet wrap for securing loads. High clarity for easy barcode scanning and superior cling properties.",
-        category: "Materials",
+        name: "Industrial Pallets",
+        description: "Comprehensive range of pallets for local and export use. Available in Black Block, Blue Block, White, and Green options.",
+        category: "Packaging Material",
         imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
         specifications: {
-          "Material": "LLDPE",
-          "Thickness": "17mic - 25mic",
-          "Width": "450mm - 500mm",
-          "Stretch": "Up to 300%"
+          "Type": "Local & Export",
+          "Colors": "Black, Blue, White, Green",
+          "Material": "Reinforced Plastic/Wood",
+          "Usage": "Industrial Storage"
         },
-        features: ["Silent Unwind", "High Clarity", "Puncture Resistant"]
+        features: ["Heavy Duty", "Export Certified", "Stackable"]
+      },
+      {
+        name: "Econo E/V Outer Box",
+        description: "Economical white or kraft 4-column outer box designed for E/V (Export/Import) purposes. Sturdy and cost-effective.",
+        category: "Packaging Material",
+        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        specifications: {
+          "Type": "4-Column Outer",
+          "Finish": "White or Kraft",
+          "Purpose": "Export/Import",
+          "Model": "Econo E/V"
+        },
+        features: ["Economical", "Sturdy", "Export Ready"]
+      },
+      {
+        name: "MK4 E/V Inner Tray",
+        description: "Standard or lightweight inner tray/insert for MK4 E/V outer boxes. Ensures product stability during transit.",
+        category: "Packaging Material",
+        imageUrl: "https://images.unsplash.com/photo-1627409228809-5a507856f6c9",
+        specifications: {
+          "Type": "Inner Tray",
+          "Compatibility": "MK4 E/V Outer",
+          "Weight": "Standard or LW",
+          "Material": "Corrugated Board"
+        },
+        features: ["Product Protection", "Snug Fit", "Recyclable"]
+      },
+      {
+        name: "Industrial Packaging Bags",
+        description: "Specialized packaging bags including MK4 Green/Red and Econo Pak ranges from 1kg to 3kg.",
+        category: "Packaging Material",
+        imageUrl: "https://images.unsplash.com/photo-1605634691459-0a562499d349",
+        specifications: {
+          "Models": "MK4, MK6, Econo Pak",
+          "Sizes": "1kg, 1.5kg, 3kg",
+          "Colors": "Green, Red, Clear",
+          "Type": "Polyethylene"
+        },
+        features: ["Tear Resistant", "Moisture Barrier", "Custom Branding Available"]
+      },
+      // Safety Equipment
+      {
+        name: "Interceptor Askari Safety Boots",
+        description: "Premium safety footwear including Lo II Smooth and Mid variants. Designed for maximum protection and comfort.",
+        category: "Safety Equipment",
+        imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6de271560",
+        specifications: {
+          "Brand": "Interceptor",
+          "Models": "Askari, Safiri, Shikamo",
+          "Type": "Steel Toe Cap",
+          "Sole": "Oil & Slip Resistant"
+        },
+        features: ["Breathable Lining", "Impact Protection", "Durable Sole"]
+      },
+      {
+        name: "Industrial Hard Hats",
+        description: "Durable head protection for construction and industrial environments. Available in various safety colors.",
+        category: "Safety Equipment",
+        imageUrl: "https://images.unsplash.com/photo-1582553091915-a764d3060020",
+        specifications: {
+          "Material": "High-Density Polyethylene",
+          "Suspension": "6-Point Webbing",
+          "Certification": "SABS Approved",
+          "Colors": "White, Yellow, Red, Blue"
+        },
+        features: ["Impact Resistant", "Adjustable Fit", "Ventilated"]
+      },
+      {
+        name: "High-Viz Reflective Gear",
+        description: "Reflective safety vests and bandanas for maximum visibility in low-light industrial environments.",
+        category: "Safety Equipment",
+        imageUrl: "https://images.unsplash.com/photo-1516937941344-00b4e0337589",
+        specifications: {
+          "Type": "Vest / Bandana",
+          "Material": "Polyester Mesh",
+          "Visibility": "High-Performance Reflective Tape",
+          "Brand": "Yield"
+        },
+        features: ["Lightweight", "Breathable", "Enhanced Visibility"]
+      },
+      // Work/Promotional Clothing
+      {
+        name: "Corporate & Work Apparel",
+        description: "High-quality professional clothing for men and women, specifically designed for industrial and corporate environments.",
+        category: "Work Clothing",
+        imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+        specifications: {
+          "Segments": "Men & Women",
+          "Material": "Cotton/Polyester Blend",
+          "Branding": "Embroidery/Print Ready",
+          "Durability": "Industrial Strength"
+        },
+        features: ["Comfortable Fit", "Color Fast", "Easy Care"]
       }
     ];
+
 
     for (const product of seedProducts) {
       await storage.createProduct(product);
