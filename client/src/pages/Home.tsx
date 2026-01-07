@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/Button";
-import { ArrowRight, Box, Recycle, Settings, Truck, Package, Phone } from "lucide-react";
+import { ArrowRight, Box, Recycle, Package, Phone } from "lucide-react";
 import { motion } from "framer-motion";
 import { useProducts } from "@/hooks/use-products";
 
@@ -128,48 +128,6 @@ export default function Home() {
             <Link href="/products" className="inline-flex items-center text-primary font-medium hover:underline">
               View All Products <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* PROCESS SECTION */}
-      <section id="process" className="py-24 bg-zinc-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-display font-bold mb-4">Our Process</h2>
-            <p className="text-gray-400">
-              We streamline the packaging journey from concept to delivery, ensuring your products arrive safely and in style.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700 hover:border-accent transition-colors">
-              <div className="bg-primary p-3 w-fit rounded-md mb-6">
-                <Settings className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">1. Consultation & Design</h3>
-              <p className="text-gray-400">
-                We analyze your product dimensions, fragility, and branding needs to engineer the perfect structural design.
-              </p>
-            </div>
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700 hover:border-accent transition-colors">
-              <div className="bg-primary p-3 w-fit rounded-md mb-6">
-                <Box className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">2. Manufacturing</h3>
-              <p className="text-gray-400">
-                Utilizing state-of-the-art machinery, we produce your packaging with precision, speed, and strict quality control.
-              </p>
-            </div>
-            <div className="bg-zinc-800 p-8 rounded-lg border border-zinc-700 hover:border-accent transition-colors">
-              <div className="bg-primary p-3 w-fit rounded-md mb-6">
-                <Truck className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold mb-3">3. Logistics & Delivery</h3>
-              <p className="text-gray-400">
-                Flexible inventory management and just-in-time delivery options to keep your supply chain moving efficiently.
-              </p>
-            </div>
           </div>
         </div>
       </section>
