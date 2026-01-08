@@ -22,7 +22,7 @@ export default function ProductList() {
   });
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 pt-28">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
         <div>
           <h1 className="text-4xl font-display font-bold mb-2">Our Products</h1>

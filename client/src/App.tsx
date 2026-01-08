@@ -22,7 +22,6 @@ function Router() {
           <Route component={NotFound} />
         </Switch>
       </main>
-      <Footer />
     </div>
   );
 }

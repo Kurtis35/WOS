@@ -9,25 +9,7 @@ export default function Home() {
   const featuredProducts = products?.slice(0, 4) || [];
 
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* NAVIGATION OVERLAY */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-black/50 backdrop-blur-md border-b border-white/10">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="font-display font-bold text-xl text-white tracking-tighter">W.O.S <span className="text-primary">PACKAGING</span></span>
-          </Link>
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-sm font-medium text-white hover:text-primary transition-colors">HOME</Link>
-            <Link href="/products" className="text-sm font-medium text-white hover:text-primary transition-colors">STORE</Link>
-            <Link href="/products?category=Packaging+Material" className="text-sm font-medium text-white hover:text-primary transition-colors uppercase">Packaging Material</Link>
-            <Link href="/products?category=Safety+Equipment" className="text-sm font-medium text-white hover:text-primary transition-colors uppercase">Safety Equipment</Link>
-            <Link href="/products?category=Work/Promotional+Clothing" className="text-sm font-medium text-white hover:text-primary transition-colors uppercase">Clothing</Link>
-          </div>
-          <Link href="/products">
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-white rounded-none">GET A QUOTE</Button>
-          </Link>
-        </div>
-      </nav>
+    <div className="flex flex-col min-h-screen pt-16">
       {/* HERO SECTION */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">

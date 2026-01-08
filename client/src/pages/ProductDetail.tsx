@@ -30,7 +30,7 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-background pb-24">
+    <div className="min-h-screen bg-background pb-24 pt-16">
       {/* Breadcrumb / Back */}
       <div className="border-b bg-white/50 backdrop-blur-sm sticky top-20 z-10">
         <div className="container mx-auto px-4 h-12 flex items-center">
