@@ -255,7 +255,10 @@ async function seedDatabase() {
 
 
     for (const product of seedProducts) {
-      await storage.createProduct(product);
+      await storage.createProduct({
+        ...product,
+        specifications: product.specifications as Record<string, string>
+      });
     }
     console.log("Seeded database with products");
   }
