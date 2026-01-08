@@ -127,6 +127,30 @@ async function seedDatabase() {
         specifications: { "Type": "Outer Box", "Color": "White", "Purpose": "E/V" },
         features: ["Export Grade", "High Visibility"]
       },
+      {
+        name: "MK4 Green Apple Bag",
+        description: "Specialized 1kg apple bag with green branding.",
+        category: "Packaging Material",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502ade9666f2.jpg",
+        specifications: { "Size": "1kg", "Color": "Green", "Type": "MK4" },
+        features: ["Ventilated", "Strong"]
+      },
+      {
+        name: "MK4 Red Apple Bag",
+        description: "Specialized 1kg apple bag with red branding.",
+        category: "Packaging Material",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502ae104443a.jpg",
+        specifications: { "Size": "1kg", "Color": "Red", "Type": "MK4" },
+        features: ["Ventilated", "Strong"]
+      },
+      {
+        name: "Econo Pak 1.5kg Bag",
+        description: "Economy packaging bag for 1.5kg of produce.",
+        category: "Packaging Material",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502ae09f12d8.jpg",
+        specifications: { "Size": "1.5kg", "Type": "Econo Pak" },
+        features: ["Cost Effective"]
+      },
 
       // 🦺 2. SAFETY EQUIPMENT
       {

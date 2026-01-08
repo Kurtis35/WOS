@@ -1,0 +1,79 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Open Sans",
+      "count": 62
+    },
+    {
+      "family": "sans-serif",
+      "count": 62
+    }
+  ],
+  "colors": {
+    "primary": "#3477B7",
+    "accent": "#D6E4F1",
+    "background": "#FFFFFF",
+    "textPrimary": "#000000",
+    "link": "#D6E4F1"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Open Sans",
+      "heading": "Open Sans"
+    },
+    "fontStacks": {
+      "body": [
+        "Open Sans",
+        "sans-serif"
+      ],
+      "heading": [
+        "Open Sans",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Open Sans",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "60px",
+      "h2": "30px",
+      "body": "24px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "2px"
+  },
+  "components": {},
+  "images": {
+    "logo": "https://files.cdn-files-a.com/uploads/7752700/400_filter_nobg_6953aaf5489bb.png",
+    "favicon": "https://wos-refresh--kriebodini.replit.app/favicon.png",
+    "ogImage": null
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Strong indicators: header logo linking to homepage, header location, visible, top-left position, highest logo on page, reasonable size. Score: 112 (clear winner by 112 points)",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "confidence": 0
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}
