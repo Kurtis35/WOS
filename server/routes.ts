@@ -64,22 +64,6 @@ async function seedDatabase() {
         features: ["Local Transport", "Heavy Duty"]
       },
       {
-        name: "Blue Block Local Pallet",
-        description: "Durable blue block pallet for local supply chain operations.",
-        category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
-        specifications: { "Type": "Local", "Color": "Blue", "Material": "Reinforced Wood/Plastic" },
-        features: ["Color Coded", "Industrial Strength"]
-      },
-      {
-        name: "Black Block Export Pallet",
-        description: "Export-grade black block pallet, heat-treated and certified for international shipping.",
-        category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
-        specifications: { "Type": "Export", "Color": "Black", "Certification": "ISPM-15" },
-        features: ["International Shipping", "Heat Treated"]
-      },
-      {
         name: "9kg Gen Jumblekraft (2 col)",
         description: "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
         category: "Packaging Material",
@@ -88,20 +72,12 @@ async function seedDatabase() {
         features: ["Produce Packaging", "Breathable"]
       },
       {
-        name: "MK9 Gen Jumble White (4 col)",
-        description: "A white, 4-column jumble box, likely for larger produce like apples or pears.",
+        name: "Packaging Bags Range",
+        description: "Specialized packaging bags including MK4 Green/Red and Econo Pak ranges from 1kg to 3kg.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
-        specifications: { "Capacity": "9kg+", "Color": "White", "Columns": "4" },
-        features: ["Premium Finish", "Large Capacity"]
-      },
-      {
-        name: "MK4 E/V Gen Outer White (4 col)",
-        description: "A white, 4-column outer box for E/V (Export/Import) purposes.",
-        category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
-        specifications: { "Type": "Outer Box", "Color": "White", "Purpose": "E/V" },
-        features: ["Export Grade", "High Visibility"]
+        imageUrl: "https://images.unsplash.com/photo-1605634691459-0a562499d349",
+        specifications: { "Models": "MK4, MK6, Econo Pak", "Sizes": "1kg, 1.5kg, 3kg" },
+        features: ["Industrial Quality", "Tear Resistant"]
       },
       // Safety Equipment
       {
@@ -113,12 +89,20 @@ async function seedDatabase() {
         features: ["Smooth Leather", "Steel Toe", "Anti-slip"]
       },
       {
-        name: "Interceptor Askari Mid",
-        description: "Mid-cut safety boot providing additional ankle support for rugged industrial environments.",
+        name: "Industrial Hard Hats",
+        description: "High-quality hard hats designed to meet industry safety standards.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6de271560",
-        specifications: { "Brand": "Interceptor", "Style": "Mid", "Type": "Safety Boot" },
-        features: ["Ankle Support", "High Durability"]
+        imageUrl: "https://images.unsplash.com/photo-1582553091915-a764d3060020",
+        specifications: { "Type": "Head Protection", "Standard": "Industrial Safety" },
+        features: ["Impact Resistant", "Adjustable Fit"]
+      },
+      {
+        name: "Safety Gloves",
+        description: "Reliable hand protection for every task, built to withstand tough conditions.",
+        category: "Safety Equipment",
+        imageUrl: "https://images.unsplash.com/photo-1516937941344-00b4e0337589",
+        specifications: { "Type": "Work Gloves", "Material": "Industrial Grade" },
+        features: ["High Dexterity", "Durable"]
       },
       // Work Clothing
       {
@@ -128,14 +112,6 @@ async function seedDatabase() {
         imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
         specifications: { "Gender": "Men", "Type": "Polo", "Material": "Performance Fabric" },
         features: ["Moisture Wicking", "Corporate Branding Ready"]
-      },
-      {
-        name: "Mens Adventure Jacket",
-        description: "Rugged adventure jacket for outdoor work and industrial environments.",
-        category: "Work/Promotional Clothing",
-        imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
-        specifications: { "Gender": "Men", "Type": "Jacket", "Style": "Adventure" },
-        features: ["Weather Resistant", "Multiple Pockets"]
       },
       {
         name: "Ladies Performance Polo",

@@ -132,6 +132,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT SECTION */}
+      <section id="about" className="py-24 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-display font-bold mb-6 uppercase tracking-widest">About WOS Packaging</h2>
+            <div className="w-20 h-1 bg-primary mx-auto mb-8" />
+            <p className="text-xl text-muted-foreground mb-6">
+              Welcome to WOS Packaging!
+            </p>
+            <p className="text-lg text-muted-foreground mb-8">
+              We are a South African supplier based in the Western Cape. Our supplies vary from packaging; to office & cleaning equipment; to pallets & work uniforms, to agricultural equipment.
+            </p>
+            <p className="text-lg font-medium text-primary">
+              All of our products can be branded for business and/or personal use.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* SUSTAINABILITY */}
       <section id="sustainability" className="py-24 bg-zinc-50 border-y">
         <div className="container mx-auto px-4">
@@ -180,8 +199,64 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CONTACT SECTION */}
+      <section id="contact" className="py-24 bg-zinc-900 text-white">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-display font-bold mb-2 text-center uppercase tracking-widest">Contact Us</h2>
+          <div className="w-20 h-1 bg-primary mx-auto mb-16" />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-primary/20 p-4 rounded-full mb-6">
+                <Phone className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-xl mb-4 text-white">Call Us</h3>
+              <div className="space-y-2">
+                <a href="tel:+27833206499" className="block text-gray-400 hover:text-white transition-colors">
+                  +27 083 320 6499 (Chris)
+                </a>
+                <a href="tel:+27760355295" className="block text-gray-400 hover:text-white transition-colors">
+                  +27 076 035 5295 (Jaun)
+                </a>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-primary/20 p-4 rounded-full mb-6">
+                <Package className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-xl mb-4 text-white">Email Us</h3>
+              <a href="mailto:info@w-o-s.co.za" className="text-gray-400 hover:text-white transition-colors">
+                info@w-o-s.co.za
+              </a>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-primary/20 p-4 rounded-full mb-6">
+                <ArrowRight className="h-6 w-6 text-primary rotate-45" />
+              </div>
+              <h3 className="font-bold text-xl mb-4 text-white">Location</h3>
+              <p className="text-gray-400">
+                16 Industrial Road, Grabouw,<br />
+                Western Cape, South Africa, 7160
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="bg-primary/20 p-4 rounded-full mb-6">
+                <Recycle className="h-6 w-6 text-primary" />
+              </div>
+              <h3 className="font-bold text-xl mb-4 text-white">Business Hours</h3>
+              <p className="text-gray-400">
+                Mon - Fri: 08:00 - 16:00
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FOOTER CALLOUT */}
-      <section id="contact" className="py-24 bg-primary text-white text-center">
+      <section className="py-24 bg-primary text-white text-center">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to upgrade your packaging?</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-10">
