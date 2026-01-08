@@ -59,7 +59,7 @@ async function seedDatabase() {
         name: "Black Block Local Pallet",
         description: "Standard black block pallet designed for local industrial storage and transport within South Africa.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506df1898516.jpg",
         specifications: { "Type": "Local", "Color": "Black", "Material": "Reinforced Wood/Plastic" },
         features: ["Local Transport", "Heavy Duty"]
       },
@@ -67,7 +67,7 @@ async function seedDatabase() {
         name: "Blue Block Local Pallet",
         description: "Durable blue block pallet for local supply chain operations.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506df278da08.jpg",
         specifications: { "Type": "Local", "Color": "Blue", "Material": "Reinforced Wood/Plastic" },
         features: ["Color Coded", "Industrial Strength"]
       },
@@ -75,7 +75,7 @@ async function seedDatabase() {
         name: "Paper Cores",
         description: "High-strength paper cores for industrial winding and packaging applications.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6501a357eb453.jpg",
         specifications: { "Material": "Industrial Paper", "Type": "Core" },
         features: ["Durable", "Recyclable"]
       },
@@ -83,7 +83,7 @@ async function seedDatabase() {
         name: "Angle Board",
         description: "Protective angle boards for pallet edge protection and load stability.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6501a44e532a4.jpg",
         specifications: { "Type": "Edge Protection" },
         features: ["Stacking Strength", "Load Stability"]
       },
@@ -91,7 +91,7 @@ async function seedDatabase() {
         name: "Polypropylene Strapping",
         description: "High-tensile PP strapping for secure pallet bundling and carton sealing.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502af17c7621.jpg",
         specifications: { "Material": "Polypropylene", "Type": "Strapping" },
         features: ["High Tensile", "Weather Resistant"]
       },
@@ -99,7 +99,7 @@ async function seedDatabase() {
         name: "Bulk Bins",
         description: "Large capacity bulk bins for agricultural and industrial storage.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_65019d5e751eb.jpg",
         specifications: { "Type": "Bulk Storage" },
         features: ["Stackable", "Heavy Duty"]
       },
@@ -107,7 +107,7 @@ async function seedDatabase() {
         name: "9kg Gen Jumblekraft (2 col)",
         description: "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502ade40774a.jpg",
         specifications: { "Capacity": "9kg", "Color": "Kraft", "Columns": "2" },
         features: ["Produce Packaging", "Breathable"]
       },
@@ -115,7 +115,7 @@ async function seedDatabase() {
         name: "MK9 Gen Jumble White (4 col)",
         description: "A white, 4-column jumble box, likely for larger produce like apples or pears.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502ad75c2e15.jpg",
         specifications: { "Capacity": "9kg+", "Color": "White", "Columns": "4" },
         features: ["Premium Finish", "Large Capacity"]
       },
@@ -123,7 +123,7 @@ async function seedDatabase() {
         name: "MK4 E/V Gen Outer White (4 col)",
         description: "A white, 4-column outer box for E/V (Export/Import) purposes.",
         category: "Packaging Material",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502add73318d.jpg",
         specifications: { "Type": "Outer Box", "Color": "White", "Purpose": "E/V" },
         features: ["Export Grade", "High Visibility"]
       },
@@ -133,7 +133,7 @@ async function seedDatabase() {
         name: "Industrial Hard Hats",
         description: "High-quality hard hats designed to meet industry safety standards.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1582553091915-a764d3060020",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506e78864708.jpg",
         specifications: { "Standard": "SABS Approved", "Type": "Head Protection" },
         features: ["Impact Resistant", "Adjustable Fit"]
       },
@@ -141,7 +141,7 @@ async function seedDatabase() {
         name: "Safety Gloves Range",
         description: "Comprehensive range of industrial gloves for various applications.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1516937941344-00b4e0337589",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506ec5192138.jpg",
         specifications: { "Type": "Hand Protection" },
         features: ["High Grip", "Durable"]
       },
@@ -149,7 +149,7 @@ async function seedDatabase() {
         name: "Respiratory Protection",
         description: "Safety masks and respirators for industrial environments.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506ef2597401.jpg",
         specifications: { "Type": "Mask", "Protection": "N95/FFP2" },
         features: ["Breathable", "Secure Fit"]
       },
@@ -157,7 +157,7 @@ async function seedDatabase() {
         name: "Interceptor Askari Lo II Smooth",
         description: "Low-cut smooth finish safety shoe designed for comfort and professional appearance.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1590486803833-ffc6de271560",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506e2325f6e5.jpg",
         specifications: { "Brand": "Interceptor", "Style": "Lo II Smooth" },
         features: ["Steel Toe", "Anti-slip"]
       },
@@ -165,7 +165,7 @@ async function seedDatabase() {
         name: "Yield Hi-Viz Reflective Bandana",
         description: "High-visibility reflective bandana for maximum safety.",
         category: "Safety Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1516937941344-00b4e0337589",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6506f233486be.jpg",
         specifications: { "Brand": "Yield", "Type": "Reflective" },
         features: ["High Viz", "Lightweight"]
       },
@@ -175,7 +175,7 @@ async function seedDatabase() {
         name: "Men's Branded Polo",
         description: "Professional men's polo shirt, perfect for branding.",
         category: "Work/Promotional Clothing",
-        imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_650742f10b77c.jpg",
         specifications: { "Gender": "Men", "Type": "Polo" },
         features: ["Branding Ready", "Comfortable Fit"]
       },
@@ -183,7 +183,7 @@ async function seedDatabase() {
         name: "Women's Branded Polo",
         description: "Tailored women's polo shirt for corporate identity.",
         category: "Work/Promotional Clothing",
-        imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_65074167e43da.jpg",
         specifications: { "Gender": "Women", "Type": "Polo" },
         features: ["Branding Ready", "Tailored"]
       },
@@ -191,7 +191,7 @@ async function seedDatabase() {
         name: "Industrial Overalls",
         description: "Heavy-duty work overalls for industrial use.",
         category: "Work/Promotional Clothing",
-        imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_650743b14643f.jpg",
         specifications: { "Type": "Overall", "Durability": "High" },
         features: ["Reinforced Stitched", "Multiple Pockets"]
       },
@@ -201,7 +201,7 @@ async function seedDatabase() {
         name: "Industrial Cleaning Chemicals",
         description: "High-strength cleaning chemicals for industrial environments.",
         category: "Office & Cleaning Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_65070243e8519.jpg",
         specifications: { "Type": "Chemicals", "Size": "5L/25L" },
         features: ["Heavy Duty", "Concentrated"]
       },
@@ -209,7 +209,7 @@ async function seedDatabase() {
         name: "Office Supplies Bundle",
         description: "Essential office supplies for administrative needs.",
         category: "Office & Cleaning Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_650702d849206.jpg",
         specifications: { "Type": "Supplies" },
         features: ["Complete Set"]
       },
@@ -219,7 +219,7 @@ async function seedDatabase() {
         name: "Produce Crates",
         description: "Durable crates for harvesting and transporting produce.",
         category: "Agricultural Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1583334547926-d71d37b4260d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_65019d5e751eb.jpg",
         specifications: { "Type": "Crate", "Material": "Plastic" },
         features: ["Stackable", "Ventilated"]
       },
@@ -227,16 +227,16 @@ async function seedDatabase() {
         name: "Farm Packaging Twine",
         description: "Strong twine for agricultural packaging and farm use.",
         category: "Agricultural Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_6502af17c7621.jpg",
         specifications: { "Type": "Twine" },
         features: ["High Strength", "Weather Resistant"]
       },
-      // ✅ Office & Cleaning Equipment
+      // ✅ Office & Cleaning Equipment (Additional)
       {
         name: "Cleaning Chemicals Range",
         description: "Industrial grade cleaning chemicals for business and factory use.",
         category: "Office & Cleaning Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_65070243e8519.jpg",
         specifications: { "Type": "Chemicals", "Size": "Various" },
         features: ["Industrial Strength", "Effective"]
       },
@@ -244,7 +244,7 @@ async function seedDatabase() {
         name: "Office Supplies",
         description: "General office supplies and stationery for administrative needs.",
         category: "Office & Cleaning Equipment",
-        imageUrl: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d",
+        imageUrl: "https://files.cdn-files-a.com/uploads/7752700/800_650702d849206.jpg",
         specifications: { "Type": "Admin Supplies" },
         features: ["Reliable", "Essential"]
       }
