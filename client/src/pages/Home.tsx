@@ -43,11 +43,11 @@ export default function Home() {
                   <Package className="mr-2 h-5 w-5" /> PRODUCTS
                 </Button>
               </Link>
-              <a href="https://apex.w-o-s.co.za" target="_blank" rel="noopener noreferrer">
+              <Link href="/apex">
                 <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-8">
                   <Phone className="mr-2 h-5 w-5" /> WOS APEX
                 </Button>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -282,11 +282,11 @@ export default function Home() {
                 Start Your Quote
               </Button>
             </Link>
-            <a href="https://apex.w-o-s.co.za" target="_blank" rel="noopener noreferrer">
+            <Link href="/apex">
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-10 font-bold uppercase tracking-widest">
                 WOS APEX
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

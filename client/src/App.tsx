@@ -8,6 +8,7 @@ import { Footer } from "@/components/Footer";
 import Home from "@/pages/Home";
 import ProductList from "@/pages/ProductList";
 import ProductDetail from "@/pages/ProductDetail";
+import WosApex from "@/pages/WosApex";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/products" component={ProductList} />
           <Route path="/products/:id" component={ProductDetail} />
+          <Route path="/apex" component={WosApex} />
           <Route component={NotFound} />
         </Switch>
       </main>
