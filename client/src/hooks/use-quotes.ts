@@ -1,25 +1,14 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { api, type InsertQuoteRequest } from "@shared/routes";
+import { useMutation } from "@tanstack/react-query";
 
 export function useCreateQuote() {
   return useMutation({
-    mutationFn: async (data: InsertQuoteRequest) => {
-      const res = await fetch(api.quotes.create.path, {
-        method: api.quotes.create.method,
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-        credentials: "include",
-      });
+    mutationFn: async (data: { productId: number; customerName: string; customerEmail: string; quantity: number; message?: string }) => {
+      // For frontend-only, we handle quotes via mailto links in the UI components
+      // This hook remains as a placeholder or can be used for local logging
+      console.log("Quote request (static):", data);
       
-      if (!res.ok) {
-        if (res.status === 400) {
-          const error = api.quotes.create.responses[400].parse(await res.json());
-          throw new Error(error.message);
-        }
-        throw new Error("Failed to submit quote request");
-      }
-      
-      return api.quotes.create.responses[201].parse(await res.json());
+      // Simulate success
+      return { success: true, message: "Quote request simulated locally" };
     },
   });
 }

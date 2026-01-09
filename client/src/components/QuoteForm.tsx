@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertQuoteRequestSchema, type InsertQuoteRequest } from "@shared/schema";
 import { useCreateQuote } from "@/hooks/use-quotes";
 import { Button } from "./ui/Button";
 import { Input } from "./ui/input";
@@ -9,6 +8,17 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Loader2 } from "lucide-react";
 import { z } from "zod";
+
+const quoteSchema = z.object({
+  name: z.string().min(2, "Name is required"),
+  company: z.string().min(2, "Company is required"),
+  email: z.string().email("Invalid email address"),
+  quantity: z.coerce.number().min(1, "Quantity must be at least 1"),
+  message: z.string().optional(),
+  productId: z.number().optional(),
+});
+
+type QuoteFormValues = z.infer<typeof quoteSchema>;
 
 interface QuoteFormProps {
   productId?: number;
@@ -20,37 +30,39 @@ export function QuoteForm({ productId, productName, className }: QuoteFormProps)
   const { toast } = useToast();
   const createQuote = useCreateQuote();
 
-  const form = useForm<InsertQuoteRequest>({
-    resolver: zodResolver(insertQuoteRequestSchema.extend({
-      // Ensure quantity is handled as number even if input is string
-      quantity: z.coerce.number().min(1, "Quantity must be at least 1"),
-      email: z.string().email("Invalid email address"),
-    })),
+  const form = useForm<QuoteFormValues>({
+    resolver: zodResolver(quoteSchema),
     defaultValues: {
       name: "",
       company: "",
       email: "",
-      quantity: 100, // Reasonable MOQ default
+      quantity: 100,
       message: productId ? `I am interested in a quote for ${productName}.` : "",
       productId: productId || undefined,
     },
   });
 
-  const onSubmit = (data: InsertQuoteRequest) => {
-    createQuote.mutate(data, {
+  const onSubmit = (data: QuoteFormValues) => {
+    // For pure frontend, we use mailto
+    const subject = encodeURIComponent(`Quote Request: ${productName || "General Inquiry"}`);
+    const body = encodeURIComponent(
+      `Customer Name: ${data.name}\n` +
+      `Company: ${data.company}\n` +
+      `Customer Email: ${data.email}\n` +
+      `Product: ${productName || "Not Specified"}\n` +
+      `Quantity: ${data.quantity}\n\n` +
+      `Message:\n${data.message || "No message provided."}`
+    );
+    
+    window.location.href = `mailto:sales@wospackaging.co.za?subject=${subject}&body=${body}`;
+    
+    createQuote.mutate(data as any, {
       onSuccess: () => {
         toast({
-          title: "Request Received",
-          description: "We'll get back to you with a custom quote shortly.",
+          title: "Opening Email Client",
+          description: "Your default email client will open with the quote request details.",
         });
         form.reset();
-      },
-      onError: (error) => {
-        toast({
-          variant: "destructive",
-          title: "Submission Failed",
-          description: error.message,
-        });
       },
     });
   };
