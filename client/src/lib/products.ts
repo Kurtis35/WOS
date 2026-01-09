@@ -76,7 +76,7 @@ export const products = [
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_JUMBLE_INNER_1767956378131.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a24d06a06.jpg&width=800",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -88,7 +88,7 @@ export const products = [
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_Jumble_Outer_1767956378133.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a238622c1.jpg&width=800",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -100,7 +100,7 @@ export const products = [
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_OUTER_1767956378134.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3028d39f.jpg&width=800",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -112,7 +112,7 @@ export const products = [
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
     "category": "Securing & Protection",
-    "imageUrl": "/attached_assets/Buckles_1767956378135.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a38a39e94.jpg&width=800",
     "specifications": {
       "Material": "Metal",
       "Type": "Buckle"
@@ -124,7 +124,7 @@ export const products = [
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Econo_EV_INNER_1767956378135.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a2c5a0720.jpg&width=800",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
@@ -136,7 +136,7 @@ export const products = [
     "name": "MK4 Green Apple Bag",
     "description": "Specialized 1kg apple bag with green branding.",
     "category": "Packaging Bags",
-    "imageUrl": "/attached_assets/Packaging_Bags_-_Green_1767939456831.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
     "specifications": {
       "Size": "1kg",
       "Type": "MK4",
@@ -149,7 +149,7 @@ export const products = [
     "name": "MK4 Red Apple Bag",
     "description": "Specialized 1kg apple bag with red branding.",
     "category": "Packaging Bags",
-    "imageUrl": "/attached_assets/Packaging_Bags_-_Red_1767939456832.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a09d64d50.jpg&width=800",
     "specifications": {
       "Size": "1kg",
       "Type": "MK4",
@@ -162,7 +162,7 @@ export const products = [
     "name": "Econo Pak 1.5kg Bag",
     "description": "Economy packaging bag for 1.5kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "/attached_assets/Packaging_Bags_-_Clear_1767939456830.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
     "specifications": {
       "Size": "1.5kg",
       "Type": "Econo Pak"
@@ -174,7 +174,7 @@ export const products = [
     "name": "Clean MELT Glue",
     "description": "High-performance hot melt adhesive for industrial packaging.",
     "category": "Custom Solutions",
-    "imageUrl": "/attached_assets/Clean_MELT_Glue_1767939456829.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3bc89456.jpg&width=800",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -185,7 +185,7 @@ export const products = [
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
     "category": "Custom Solutions",
-    "imageUrl": "/attached_assets/Slugs_Glue_1767939456836.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3a60f9ed.jpg&width=800",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -228,10 +228,10 @@ export const products = [
   },
   {
     "id": 22,
-    "name": "MK9 Gen Jumble White (4 col)",
+    "name": "MK9 Gen Jumble White",
     "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Boxes_05_1767939456818.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a1f05481d.jpg&width=800",
     "specifications": {
       "Color": "White",
       "Columns": "4",
@@ -241,10 +241,10 @@ export const products = [
   },
   {
     "id": 23,
-    "name": "9kg Gen Jumblekraft (2 col)",
+    "name": "9kg Gen Jumblekraft",
     "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9kg_Gen_Jumblekraft_(2_col)_1767939456809.avif",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a21e64906.jpg&width=800",
     "specifications": {
       "Color": "Kraft",
       "Columns": "2",
@@ -254,10 +254,10 @@ export const products = [
   },
   {
     "id": 24,
-    "name": "MK4 E/V Gen Outer White (4 col)",
+    "name": "MK4 E/V Gen Outer White",
     "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Boxes_01_1767939456811.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a28a3818e.jpg&width=800",
     "specifications": {
       "Type": "Outer Box",
       "Color": "White",
@@ -270,7 +270,7 @@ export const products = [
     "name": "Shrink Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
     "category": "Securing & Protection",
-    "imageUrl": "/attached_assets/Shrink_Wrap_1767939456835.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3ce884e1.jpg&width=800",
     "specifications": {
       "Type": "Wrap"
     },
