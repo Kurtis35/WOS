@@ -24,7 +24,7 @@ export function Navbar() {
           <img 
             src="https://files.cdn-files-a.com/uploads/7752700/400_filter_nobg_6953aaf5489bb.png" 
             alt="W.O.S Packaging" 
-            className="h-10 w-auto"
+            className="h-14 w-auto"
           />
         </Link>
 
@@ -32,11 +32,11 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className={cn(
-              "text-[10px] font-bold tracking-widest transition-all uppercase px-2 py-1 rounded-sm",
+              "text-[10px] font-bold tracking-widest transition-all uppercase px-3 py-1.5 rounded-sm",
               location === link.href 
                 ? "text-primary bg-primary/5" 
                 : link.isSpecial 
-                  ? "text-accent border border-accent/20 hover:bg-accent hover:text-white"
+                  ? "bg-[#00529B] text-white hover:bg-[#003D73]"
                   : "text-gray-600 hover:text-primary"
             )}>
               {link.label}
@@ -69,9 +69,9 @@ export function Navbar() {
               key={link.href} 
               href={link.href} 
               className={cn(
-                "text-sm font-bold tracking-widest p-3 transition-colors uppercase",
+                "text-sm font-bold tracking-widest p-4 transition-colors uppercase",
                 location === link.href ? "text-primary bg-primary/5" : "text-gray-800 hover:bg-gray-50",
-                link.isSpecial && "text-accent border border-accent/10 mt-2"
+                link.isSpecial && "bg-[#00529B] text-white hover:bg-[#003D73] mt-2 text-center rounded-none"
               )}
               onClick={() => setIsOpen(false)}
             >
