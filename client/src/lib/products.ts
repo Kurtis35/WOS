@@ -93,7 +93,7 @@ export const products = [
     "id": 7,
     "name": "9kg Gen Jumblekraft (2 col)",
     "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
-    "category": "Curragated Boxes/Cartons",
+    "category": "Corrugated Boxes/CARTONS",
     "imageUrl": "/attached_assets/9kg_Gen_Jumblekraft_(2_col)_1767939456809.avif",
     "specifications": {
       "Color": "Kraft",
@@ -109,7 +109,7 @@ export const products = [
     "id": 8,
     "name": "MK9 Gen Jumble White (4 col)",
     "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
-    "category": "Curragated Boxes/Cartons",
+    "category": "Corrugated Boxes/CARTONS",
     "imageUrl": "/attached_assets/Boxes_05_1767939456818.jpg",
     "specifications": {
       "Color": "White",
@@ -125,7 +125,7 @@ export const products = [
     "id": 9,
     "name": "MK4 E/V Gen Outer White (4 col)",
     "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
-    "category": "Curragated Boxes/Cartons",
+    "category": "Corrugated Boxes/CARTONS",
     "imageUrl": "/attached_assets/Boxes_01_1767939456811.jpg",
     "specifications": {
       "Type": "Outer Box",

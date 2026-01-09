@@ -67,11 +67,11 @@ export default function Home() {
             className="max-w-2xl"
           >
             <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-sm mb-8 inline-block">
-              <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight mb-4">
+              <h1 className="font-display text-2xl md:text-6xl font-bold leading-tight mb-4">
                 Your Ultimate <br className="hidden md:block"/>
                 Packaging Partner
               </h1>
-              <p className="text-lg md:text-2xl font-medium text-gray-200">
+              <p className="text-sm md:text-2xl font-medium text-gray-200">
                 TOP QUALITY PACKAGING AND WORKWEAR SOLUTIONS FOR YOU.
               </p>
             </div>
@@ -98,11 +98,11 @@ export default function Home() {
           <div className="w-20 h-1 bg-primary mx-auto mb-12" />
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Link href="/products?category=Curragated+Boxes/Cartons" className="group">
+            <Link href="/products?category=Corrugated+Boxes/CARTONS" className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
                 <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" alt="Boxes" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Curragated Boxes</div>
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Corrugated Boxes</div>
               </div>
             </Link>
             <Link href="/products?category=Bags" className="group">

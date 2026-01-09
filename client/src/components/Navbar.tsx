@@ -11,7 +11,7 @@ export function Navbar() {
   const links = [
     { href: "/", label: "HOME" },
     { href: "/products", label: "STORE" },
-    { href: "/products?category=Curragated+Boxes/Cartons", label: "BOXES" },
+    { href: "/products?category=Corrugated+Boxes/CARTONS", label: "BOXES" },
     { href: "/products?category=Bags", label: "BAGS" },
     { href: "/products?category=Securing+%26+Protection", label: "PROTECTION" },
     { href: "/products?category=Custom+Solutions", label: "CUSTOM SOLUTIONS" },
