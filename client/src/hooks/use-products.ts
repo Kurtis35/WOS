@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { products } from "@/lib/products";
-import type { Product } from "@shared/schema";
+import type { Product } from "@/types/schema";
 
 export function useProducts() {
   return useQuery<Product[]>({
