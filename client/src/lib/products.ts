@@ -53,7 +53,7 @@ export const products = [
     "name": "Polypropylene Strapping",
     "description": "High-tensile PP strapping for secure pallet bundling and carton sealing.",
     "category": "Securing & Protection",
-    "imageUrl": "/attached_assets/Buckles_1767939456825.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6502af17c7621.jpg&width=800",
     "specifications": {
       "Type": "Strapping",
       "Material": "Polypropylene"
@@ -65,7 +65,7 @@ export const products = [
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/65019d5e751eb.jpg&width=800",
+    "imageUrl": "/attached_assets/Bulk_Bins_01_1767939456826.jpg",
     "specifications": {
       "Type": "Bulk Storage"
     },
@@ -225,5 +225,55 @@ export const products = [
       "Type": "Twine"
     },
     "features": ["High Strength", "Weather Resistant"]
+  },
+  {
+    "id": 22,
+    "name": "MK9 Gen Jumble White (4 col)",
+    "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
+    "category": "Corrugated Boxes/CARTONS",
+    "imageUrl": "/attached_assets/Boxes_05_1767939456818.jpg",
+    "specifications": {
+      "Color": "White",
+      "Columns": "4",
+      "Capacity": "9kg+"
+    },
+    "features": ["Premium Finish", "Large Capacity"]
+  },
+  {
+    "id": 23,
+    "name": "9kg Gen Jumblekraft (2 col)",
+    "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
+    "category": "Corrugated Boxes/CARTONS",
+    "imageUrl": "/attached_assets/9kg_Gen_Jumblekraft_(2_col)_1767939456809.avif",
+    "specifications": {
+      "Color": "Kraft",
+      "Columns": "2",
+      "Capacity": "9kg"
+    },
+    "features": ["Produce Packaging", "Breathable"]
+  },
+  {
+    "id": 24,
+    "name": "MK4 E/V Gen Outer White (4 col)",
+    "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
+    "category": "Corrugated Boxes/CARTONS",
+    "imageUrl": "/attached_assets/Boxes_01_1767939456811.jpg",
+    "specifications": {
+      "Type": "Outer Box",
+      "Color": "White",
+      "Purpose": "E/V"
+    },
+    "features": ["Export Grade", "High Visibility"]
+  },
+  {
+    "id": 25,
+    "name": "Shrink Wrap",
+    "description": "Industrial grade shrink wrap for secure load stabilization.",
+    "category": "Securing & Protection",
+    "imageUrl": "/attached_assets/Shrink_Wrap_1767939456835.jpg",
+    "specifications": {
+      "Type": "Wrap"
+    },
+    "features": ["High Clarity", "Superior Stretch"]
   }
 ];
