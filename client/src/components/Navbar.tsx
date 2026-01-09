@@ -9,13 +9,10 @@ export function Navbar() {
   const [location] = useLocation();
 
   const links = [
-    { href: "/", label: "HOME" },
-    { href: "/products", label: "STORE" },
-    { href: "/products?category=Corrugated+Boxes/CARTONS", label: "BOXES" },
-    { href: "/products?category=Bags", label: "BAGS" },
-    { href: "/products?category=Securing+%26+Protection", label: "PROTECTION" },
-    { href: "/products?category=Custom+Solutions", label: "CUSTOM SOLUTIONS" },
-    { href: "/apex", label: "WOS APEX", isSpecial: true },
+    { href: "/", label: "Home" },
+    { href: "/#about", label: "About Us" },
+    { href: "/products", label: "Products" },
+    { href: "/#contact", label: "Contact" },
   ];
 
   return (
@@ -36,9 +33,7 @@ export function Navbar() {
               "text-[10px] font-bold tracking-widest transition-all uppercase px-3 py-1.5 rounded-sm",
               location === link.href 
                 ? "text-primary bg-primary/5" 
-                : link.isSpecial 
-                  ? "bg-[#00529B] text-white hover:bg-[#003D73]"
-                  : "text-gray-600 hover:text-primary"
+                : "text-gray-600 hover:text-primary"
             )}>
               {link.label}
             </Link>
@@ -71,8 +66,7 @@ export function Navbar() {
               href={link.href} 
               className={cn(
                 "text-sm font-bold tracking-widest p-4 transition-colors uppercase",
-                location === link.href ? "text-primary bg-primary/5" : "text-gray-800 hover:bg-gray-50",
-                link.isSpecial && "bg-[#00529B] text-white hover:bg-[#003D73] mt-2 text-center rounded-none"
+                location === link.href ? "text-primary bg-primary/5" : "text-gray-800 hover:bg-gray-50"
               )}
               onClick={() => setIsOpen(false)}
             >
