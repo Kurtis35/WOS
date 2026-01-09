@@ -20,11 +20,11 @@ export default function WosApex() {
   });
 
   return (
-    <div className="container mx-auto px-4 py-12 pt-28">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
+    <div className="container mx-auto px-4 py-8 pt-24">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
         <div>
-          <h1 className="text-4xl font-display font-bold mb-2">WOS APEX</h1>
-          <p className="text-muted-foreground">High-performance industrial solutions and equipment.</p>
+          <h1 className="text-3xl md:text-4xl font-display font-bold mb-2">WOS APEX</h1>
+          <p className="text-muted-foreground text-sm md:text-base">High-performance industrial solutions and equipment.</p>
         </div>
         
         <div className="flex gap-2 w-full md:w-auto">
@@ -32,7 +32,7 @@ export default function WosApex() {
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input 
               placeholder="Search Apex products..." 
-              className="pl-9"
+              className="pl-9 h-11 md:h-10"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -41,32 +41,32 @@ export default function WosApex() {
       </div>
 
       <div className="grid lg:grid-cols-[240px_1fr] gap-8">
-        {/* Sidebar Filters */}
+        {/* Sidebar Filters - Responsive toggle or always visible on large */}
         <div className="space-y-6">
           <div className="p-4 border rounded-lg bg-card">
-            <div className="flex items-center gap-2 font-bold mb-4 text-sm uppercase tracking-wider text-muted-foreground">
-              <SlidersHorizontal className="h-4 w-4" /> Filters
+            <div className="flex items-center gap-2 font-bold mb-4 text-xs uppercase tracking-wider text-muted-foreground">
+              <SlidersHorizontal className="h-4 w-4" /> Filter by Category
             </div>
-            <div className="space-y-2">
+            <div className="flex flex-wrap md:flex-col gap-2">
               <button
                 onClick={() => setSelectedCategory(null)}
-                className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
+                className={`text-left px-3 py-2 rounded-md text-sm transition-colors ${
                   selectedCategory === null 
                     ? "bg-primary text-primary-foreground font-medium" 
-                    : "hover:bg-secondary text-muted-foreground"
-                }`}
+                    : "bg-secondary/50 hover:bg-secondary text-muted-foreground"
+                } w-auto md:w-full`}
               >
-                All Categories
+                All Products
               </button>
               {categories.map(category => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
+                  className={`text-left px-3 py-2 rounded-md text-sm transition-colors ${
                     selectedCategory === category 
                       ? "bg-primary text-primary-foreground font-medium" 
-                      : "hover:bg-secondary text-muted-foreground"
-                  }`}
+                      : "bg-secondary/50 hover:bg-secondary text-muted-foreground"
+                  } w-auto md:w-full`}
                 >
                   {category}
                 </button>

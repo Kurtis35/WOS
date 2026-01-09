@@ -14,6 +14,7 @@ export function Navbar() {
     { href: "/products?category=Packaging+Material", label: "PACKAGING MATERIAL" },
     { href: "/products?category=Safety+Equipment", label: "SAFETY EQUIPMENT" },
     { href: "/products?category=Work/Promotional+Clothing", label: "CLOTHING" },
+    { href: "/apex", label: "WOS APEX", isSpecial: true },
   ];
 
   return (
@@ -31,8 +32,12 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <Link key={link.href} href={link.href} className={cn(
-              "text-[10px] font-bold tracking-widest transition-colors hover:text-primary uppercase",
-              location === link.href ? "text-primary" : "text-gray-600"
+              "text-[10px] font-bold tracking-widest transition-all uppercase px-2 py-1 rounded-sm",
+              location === link.href 
+                ? "text-primary bg-primary/5" 
+                : link.isSpecial 
+                  ? "text-accent border border-accent/20 hover:bg-accent hover:text-white"
+                  : "text-gray-600 hover:text-primary"
             )}>
               {link.label}
             </Link>
@@ -58,12 +63,16 @@ export function Navbar() {
 
       {/* Mobile Nav */}
       {isOpen && (
-        <div className="md:hidden border-t border-gray-100 bg-white p-4 flex flex-col gap-4 animate-in slide-in-from-top-2 shadow-lg">
+        <div className="md:hidden border-t border-gray-100 bg-white p-4 flex flex-col gap-2 animate-in slide-in-from-top-2 shadow-lg">
           {links.map((link) => (
             <Link 
               key={link.href} 
               href={link.href} 
-              className="text-sm font-bold tracking-widest text-gray-800 p-2 hover:bg-gray-50 rounded-none uppercase"
+              className={cn(
+                "text-sm font-bold tracking-widest p-3 transition-colors uppercase",
+                location === link.href ? "text-primary bg-primary/5" : "text-gray-800 hover:bg-gray-50",
+                link.isSpecial && "text-accent border border-accent/10 mt-2"
+              )}
               onClick={() => setIsOpen(false)}
             >
               {link.label}

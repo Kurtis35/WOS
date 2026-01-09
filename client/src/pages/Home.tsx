@@ -23,28 +23,28 @@ export default function Home() {
         
         <div className="container mx-auto px-4 relative z-10 text-white">
           <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="max-w-2xl"
           >
-            <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 rounded-sm mb-8 inline-block">
+            <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-sm mb-8 inline-block">
               <h1 className="font-display text-4xl md:text-6xl font-bold leading-tight mb-4">
-                Your Ultimate <br/>
+                Your Ultimate <br className="hidden md:block"/>
                 Packaging Partner
               </h1>
-              <p className="text-xl md:text-2xl font-medium text-gray-200">
+              <p className="text-lg md:text-2xl font-medium text-gray-200">
                 TOP QUALITY PACKAGING AND WORKWEAR SOLUTIONS FOR YOU.
               </p>
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/products">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-white border-none rounded-none px-8">
-                  <Package className="mr-2 h-5 w-5" /> PRODUCTS
+                <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white border-none rounded-none px-8 py-6 text-sm font-bold">
+                  <Package className="mr-2 h-5 w-5" /> VIEW PRODUCTS
                 </Button>
               </Link>
               <Link href="/apex">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-8">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10 rounded-none px-8 py-6 text-sm font-bold">
                   <Phone className="mr-2 h-5 w-5" /> WOS APEX
                 </Button>
               </Link>
