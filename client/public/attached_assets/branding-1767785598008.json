@@ -1,0 +1,107 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Open Sans",
+      "count": 156
+    },
+    {
+      "family": "Arial",
+      "count": 78
+    },
+    {
+      "family": "sans-serif",
+      "count": 78
+    },
+    {
+      "family": "Oswald",
+      "count": 1
+    }
+  ],
+  "colors": {
+    "primary": "#337AB7",
+    "accent": "#A94442",
+    "background": "#FFFFFF",
+    "textPrimary": "#000000",
+    "link": "#A94442"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Open Sans",
+      "heading": "Open Sans"
+    },
+    "fontStacks": {
+      "body": [
+        "Open Sans",
+        "Open Sans",
+        "Arial",
+        "sans-serif"
+      ],
+      "heading": [
+        "Open Sans",
+        "Open Sans",
+        "Arial",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Open Sans",
+        "Open Sans",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "25px",
+      "h2": "25px",
+      "body": "16.5px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "6px"
+  },
+  "components": {
+    "input": {
+      "background": "#FFFFFF",
+      "textColor": "#555555",
+      "borderColor": "#D4D7E5",
+      "borderRadius": "4px",
+      "borderRadiusCorners": {
+        "topLeft": "4px",
+        "topRight": "4px",
+        "bottomRight": "4px",
+        "bottomLeft": "4px"
+      },
+      "shadow": "rgba(0, 0, 0, 0.075) 0px 1px 1px 0px inset"
+    }
+  },
+  "images": {
+    "logo": "https://files.cdn-files-a.com/uploads/7752700/400_filter_nobg_6953aaf5489bb.png",
+    "favicon": "https://files.cdn-files-a.com/uploads/7752700/400_6953aad58128a.png?aspect_ratio=1:1&width=48&format=png",
+    "ogImage": "https://files.cdn-files-a.com/uploads/7752700/800_6756da4d388bb.png"
+  },
+  "__framework_hints": [],
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Strong indicators: in header, header location, visible, top-left position, highest logo on page, class contains logo, alt exactly matches brand name \"W.O.S Packaging\", reasonable size. Score: 112 (clear winner by 112 points)",
+    "confidence": 0.9
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "secondary": {
+      "index": -1,
+      "text": "N/A",
+      "reasoning": "LLM failed"
+    },
+    "confidence": 0
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  }
+}

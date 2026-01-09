@@ -1,0 +1,198 @@
+You are rebuilding the WOS Packaging website (https://www.w-o-s.co.za
+).
+This is NOT an online store — products are showcased only, with quote requests instead of checkout.
+
+The site must feel:
+
+Industrial
+
+Minimal
+
+Product-led
+
+Easy to scan
+
+B2B-focused
+
+Technical Requirements
+
+The codebase must support:
+
+Next.js / React
+
+Typescript
+
+Tailwind CSS
+
+shadcn/ui project structure
+
+Framer Motion
+
+If the project does not already support these:
+
+Provide setup instructions using shadcn CLI
+
+Explain why /components/ui must exist and be used
+
+Install required dependencies
+
+Default component path:
+/components/ui
+
+Hero Section (Adapted from DicedHeroSection)
+
+Use the provided DicedHeroSection React component as the visual and structural reference, but adapt it for a packaging manufacturer.
+
+Hero Intent
+
+Immediately communicate what WOS does
+
+Visually showcase packaging products, not lifestyle imagery
+
+No promotional language like “Shop Now”
+
+Hero Content Changes
+
+Replace demo content with:
+
+Top text: “WOS Packaging”
+
+Main headline: “Packaging Solutions That Perform”
+
+Sub text: Short B2B value statement (custom packaging, materials, scale)
+
+Primary CTA: “View Products” or “Request a Quote”
+
+Image Grid Behavior
+
+Use 4 product-related images (boxes, bags, packaging materials)
+
+Clicking images should navigate to product category pages
+
+Hover states are allowed, but subtle
+
+Product Showcase (Core Focus)
+
+Immediately after the hero:
+
+Product Grid
+
+Strong grid system
+
+No pricing
+
+No cart
+
+No checkout
+
+Each product card includes:
+
+Product image
+
+Product name
+
+Short description
+
+CTA: “View Details”
+
+Filters:
+
+Structure prepared for categories (future-ready)
+
+Not required to be functional yet
+
+Product Detail Pages
+
+Each product has its own page.
+
+Include:
+
+Large product image
+
+Clear product title
+
+Specifications table
+
+Customisation options
+
+Quote request form
+
+Name
+
+Company
+
+Email
+
+Quantity
+
+Message
+
+CTA must say “Request a Quote”, never “Buy” or “Add to Cart”.
+
+Supporting Sections
+
+Below the product showcase:
+
+Custom Packaging Process
+
+Step 1: Choose Product
+
+Step 2: Customise
+
+Step 3: Manufacture & Deliver
+
+Sustainability & Materials
+
+Minimal copy
+
+Clear headings
+
+Responsible sourcing tone
+
+Client Logos
+
+Grid layout
+
+Monochrome
+
+No testimonials text
+
+Design Language
+
+Minimal
+
+No gradients except where used intentionally (hero headline)
+
+Strong spacing
+
+Neutral colors
+
+Industrial typography
+
+Grid-first layout
+
+Mobile-first
+
+Integration Rules
+
+Copy all provided components into /components/ui
+
+Install framer-motion
+
+Use Unsplash images that are known to exist
+
+Use lucide-react for icons if required
+
+Do not add unnecessary libraries
+
+No ecommerce logic
+
+Questions the AI Should Consider (Internally)
+
+What props should be passed into the hero?
+
+What product data structure will scale best?
+
+How should the hero behave responsively?
+
+Where does this component provide the most value? (Homepage only)
