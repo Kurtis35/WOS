@@ -39,10 +39,24 @@ export default function Home() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1 }}
-              className="w-full h-full object-contain brightness-75"
+              className="w-full h-full object-cover brightness-75 blur-sm scale-110"
             />
           </AnimatePresence>
-          <div className="absolute inset-0 bg-black/40" />
+        </div>
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentSlide}
+              src={slides[currentSlide]}
+              alt="Packaging Solution"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="h-full w-auto max-w-full object-contain relative z-10"
+            />
+          </AnimatePresence>
+          <div className="absolute inset-0 bg-black/40 z-0" />
         </div>
         
         <div className="container mx-auto px-4 relative z-10 text-white">
