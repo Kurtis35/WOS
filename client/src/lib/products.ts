@@ -91,54 +91,81 @@ export const products = [
   },
   {
     "id": 7,
-    "name": "9kg Gen Jumblekraft (2 col)",
-    "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
+    "name": "9KG Jumble Inner",
+    "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9kg_Gen_Jumblekraft_(2_col)_1767939456809.avif",
+    "imageUrl": "/attached_assets/9KG_JUMBLE_INNER_1767956378131.jpg",
     "specifications": {
-      "Color": "Kraft",
-      "Columns": "2",
-      "Capacity": "9kg"
+      "Capacity": "9kg",
+      "Type": "Inner"
     },
     "features": [
-      "Produce Packaging",
-      "Breathable"
+      "Structural Support",
+      "Protective"
     ]
   },
   {
     "id": 8,
-    "name": "MK9 Gen Jumble White (4 col)",
-    "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
+    "name": "9KG Jumble Outer",
+    "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Boxes_05_1767939456818.jpg",
+    "imageUrl": "/attached_assets/9KG_Jumble_Outer_1767956378133.jpg",
     "specifications": {
-      "Color": "White",
-      "Columns": "4",
-      "Capacity": "9kg+"
+      "Capacity": "9kg",
+      "Type": "Outer"
     },
     "features": [
-      "Premium Finish",
-      "Large Capacity"
+      "High Visibility",
+      "Fruit Branding"
     ]
   },
   {
     "id": 9,
-    "name": "MK4 E/V Gen Outer White (4 col)",
-    "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
+    "name": "9KG Outer",
+    "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Boxes_01_1767939456811.jpg",
+    "imageUrl": "/attached_assets/9KG_OUTER_1767956378134.jpg",
     "specifications": {
-      "Type": "Outer Box",
-      "Color": "White",
-      "Purpose": "E/V"
+      "Capacity": "9kg",
+      "Type": "Outer"
     },
     "features": [
-      "Export Grade",
-      "High Visibility"
+      "Fresh Fruit Branding",
+      "Stackable"
     ]
   },
   {
     "id": 10,
+    "name": "Buckles",
+    "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
+    "category": "Securing & Protection",
+    "imageUrl": "/attached_assets/Buckles_1767956378135.jpg",
+    "specifications": {
+      "Material": "Metal",
+      "Type": "Buckle"
+    },
+    "features": [
+      "Heavy Duty",
+      "Secure Fastening"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Econo EV Inner",
+    "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
+    "category": "Corrugated Boxes/CARTONS",
+    "imageUrl": "/attached_assets/Econo_EV_INNER_1767956378135.jpg",
+    "specifications": {
+      "Type": "Econo EV Inner",
+      "Feature": "Ventilated"
+    },
+    "features": [
+      "Ventilated",
+      "Cost Effective"
+    ]
+  },
+  {
+    "id": 12,
     "name": "MK4 Green Apple Bag",
     "description": "Specialized 1kg apple bag with green branding.",
     "category": "Bags",
@@ -154,7 +181,7 @@ export const products = [
     ]
   },
   {
-    "id": 11,
+    "id": 13,
     "name": "MK4 Red Apple Bag",
     "description": "Specialized 1kg apple bag with red branding.",
     "category": "Bags",
@@ -170,7 +197,7 @@ export const products = [
     ]
   },
   {
-    "id": 12,
+    "id": 14,
     "name": "Econo Pak 1.5kg Bag",
     "description": "Economy packaging bag for 1.5kg of produce.",
     "category": "Bags",
@@ -184,7 +211,7 @@ export const products = [
     ]
   },
   {
-    "id": 13,
+    "id": 15,
     "name": "Clean MELT Glue",
     "description": "High-performance hot melt adhesive for industrial packaging.",
     "category": "Custom Solutions",
@@ -198,7 +225,7 @@ export const products = [
     ]
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "Safety Protection Gear",
     "description": "Essential safety gear for industrial and warehouse protection.",
     "category": "Securing & Protection",
@@ -212,7 +239,7 @@ export const products = [
     ]
   },
   {
-    "id": 15,
+    "id": 17,
     "name": "Shrink Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
     "category": "Securing & Protection",
@@ -226,7 +253,7 @@ export const products = [
     ]
   },
   {
-    "id": 16,
+    "id": 18,
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
     "category": "Custom Solutions",
@@ -240,67 +267,7 @@ export const products = [
     ]
   },
   {
-    "id": 17,
-    "name": "Ladies Bush Long Sleeve Shirt",
-    "description": "Durable and comfortable long sleeve bush shirt for outdoor and field work.",
-    "category": "Apparel",
-    "imageUrl": "/attached_assets/Ladies_Bush_Long_Sleeve_Shirt_1767939062786.png",
-    "specifications": {
-      "Type": "Apparel",
-      "Gender": "Ladies"
-    },
-    "features": [
-      "Durable",
-      "Breathable"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "Mens Performance Polo",
-    "description": "High-performance polo shirt for professional and industrial environments.",
-    "category": "Apparel",
-    "imageUrl": "/attached_assets/Mens_Performance_Polo_01_1767939062793.png",
-    "specifications": {
-      "Type": "Apparel",
-      "Gender": "Mens"
-    },
-    "features": [
-      "Moisture Wicking",
-      "Professional Look"
-    ]
-  },
-  {
     "id": 19,
-    "name": "Unisex Vetis Polo",
-    "description": "Versatile unisex polo shirt suitable for various work environments.",
-    "category": "Apparel",
-    "imageUrl": "/attached_assets/Unisex_Vetis_Polo_1767939062799.png",
-    "specifications": {
-      "Type": "Apparel",
-      "Gender": "Unisex"
-    },
-    "features": [
-      "Comfort Fit",
-      "Easy Care"
-    ]
-  },
-  {
-    "id": 20,
-    "name": "Ladies Hiking Pants",
-    "description": "High-quality hiking pants designed for durability and movement.",
-    "category": "Apparel",
-    "imageUrl": "/attached_assets/Ladies_Hiking_Pants02_1767939062791.png",
-    "specifications": {
-      "Type": "Apparel",
-      "Gender": "Ladies"
-    },
-    "features": [
-      "Flexible",
-      "Hard Wearing"
-    ]
-  },
-  {
-    "id": 21,
     "name": "Industrial Cleaning Chemicals",
     "description": "High-strength cleaning chemicals for industrial environments.",
     "category": "Custom Solutions",
@@ -315,20 +282,7 @@ export const products = [
     ]
   },
   {
-    "id": 22,
-    "name": "Office Supplies Bundle",
-    "description": "Essential office supplies for administrative needs.",
-    "category": "Custom Solutions",
-    "imageUrl": "https://files.cdn-files-a.com/uploads/7752700/800_650702d849206.jpg",
-    "specifications": {
-      "Type": "Supplies"
-    },
-    "features": [
-      "Complete Set"
-    ]
-  },
-  {
-    "id": 23,
+    "id": 20,
     "name": "Produce Crates",
     "description": "Durable crates for harvesting and transporting produce.",
     "category": "Custom Solutions",
@@ -343,7 +297,7 @@ export const products = [
     ]
   },
   {
-    "id": 24,
+    "id": 21,
     "name": "Farm Packaging Twine",
     "description": "Strong twine for agricultural packaging and farm use.",
     "category": "Securing & Protection",
@@ -354,35 +308,6 @@ export const products = [
     "features": [
       "High Strength",
       "Weather Resistant"
-    ]
-  },
-  {
-    "id": 25,
-    "name": "Cleaning Chemicals Range",
-    "description": "Industrial grade cleaning chemicals for business and factory use.",
-    "category": "Custom Solutions",
-    "imageUrl": "https://files.cdn-files-a.com/uploads/7752700/800_65070243e8519.jpg",
-    "specifications": {
-      "Size": "Various",
-      "Type": "Chemicals"
-    },
-    "features": [
-      "Industrial Strength",
-      "Effective"
-    ]
-  },
-  {
-    "id": 26,
-    "name": "Office Supplies",
-    "description": "General office supplies and stationery for administrative needs.",
-    "category": "Custom Solutions",
-    "imageUrl": "https://files.cdn-files-a.com/uploads/7752700/800_650702d849206.jpg",
-    "specifications": {
-      "Type": "Admin Supplies"
-    },
-    "features": [
-      "Reliable",
-      "Essential"
     ]
   }
 ];
