@@ -9,10 +9,6 @@ export default function WosApex() {
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Filter products for WOS APEX specifically if needed, 
-  // but for now we follow the request to make it "same as Products"
-  // If there's a specific "Apex" category, we could filter by it.
-  
   const categories = products 
     ? Array.from(new Set(products.map(p => p.category))) 
     : [];
@@ -115,10 +111,10 @@ export default function WosApex() {
                       {product.description}
                     </p>
                     <div className="mt-auto pt-4 border-t">
-                       {/* WOS APEX items link to external or specific detail if needed */}
-                       <span className="text-sm font-medium text-primary flex items-center group-hover:underline cursor-pointer">
+                       {/* Use a simple mailto for quotes in frontend-only mode */}
+                       <a href={`mailto:info@w-o-s.co.za?subject=Quote Request: ${product.name}`} className="text-sm font-medium text-primary flex items-center group-hover:underline">
                         Request Quote <ArrowRight className="ml-1 h-3 w-3" />
-                      </span>
+                      </a>
                     </div>
                   </div>
                 </div>
