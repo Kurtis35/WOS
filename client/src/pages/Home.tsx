@@ -59,40 +59,33 @@ export default function Home() {
           <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-12" />
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link href="/products?category=Packaging+Material" className="group">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Link href="/products?category=Curragated+Boxes/Cartons" className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" alt="Packaging" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" alt="Boxes" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Packaging Material</div>
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Curragated Boxes</div>
               </div>
             </Link>
-            <Link href="/products?category=Safety+Equipment" className="group">
+            <Link href="/products?category=Bags" className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" alt="Safety" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Bags" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Safety Equipment</div>
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Bags</div>
               </div>
             </Link>
-            <Link href="/products?category=Work/Promotional+Clothing" className="group">
+            <Link href="/products?category=Securing+%26+Protection" className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80" alt="Clothing" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" alt="Protection" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Work Clothing</div>
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Securing & Protection</div>
               </div>
             </Link>
-            <Link href="/products?category=Office+&+Cleaning+Equipment" className="group">
+            <Link href="/products?category=Custom+Solutions" className="group">
               <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Cleaning" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Custom" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Office & Cleaning Equipment</div>
-              </div>
-            </Link>
-            <Link href="/products?category=Agricultural+Equipment" className="group">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1583334547926-d71d37b4260d?w=800&q=80" alt="Agricultural" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Agricultural Equipment</div>
+                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Custom Solutions</div>
               </div>
             </Link>
           </div>

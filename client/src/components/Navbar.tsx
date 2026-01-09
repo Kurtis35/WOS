@@ -11,9 +11,10 @@ export function Navbar() {
   const links = [
     { href: "/", label: "HOME" },
     { href: "/products", label: "STORE" },
-    { href: "/products?category=Packaging+Material", label: "PACKAGING MATERIAL" },
-    { href: "/products?category=Safety+Equipment", label: "SAFETY EQUIPMENT" },
-    { href: "/products?category=Work/Promotional+Clothing", label: "CLOTHING" },
+    { href: "/products?category=Curragated+Boxes/Cartons", label: "BOXES" },
+    { href: "/products?category=Bags", label: "BAGS" },
+    { href: "/products?category=Securing+%26+Protection", label: "PROTECTION" },
+    { href: "/products?category=Custom+Solutions", label: "CUSTOM SOLUTIONS" },
     { href: "/apex", label: "WOS APEX", isSpecial: true },
   ];
 
