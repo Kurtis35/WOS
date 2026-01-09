@@ -169,14 +169,21 @@ export default function Home() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-display font-bold mb-6 uppercase tracking-widest">About WOS Packaging</h2>
             <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-            <p className="text-xl text-muted-foreground mb-6">
-              Welcome to WOS Packaging!
+            <p className="text-lg text-muted-foreground mb-6">
+              WOS Packaging- a Trading company of White Operating Solutions (pty) ltd in the Western Cape, South Africa.
             </p>
-            <p className="text-lg text-muted-foreground mb-8">
-              We are a South African supplier based in the Western Cape. Our supplies vary from packaging; to office & cleaning equipment; to pallets & work uniforms, to agricultural equipment.
+            <p className="text-lg text-muted-foreground mb-6">
+              WOS is a family owned company, started in 2020 in the packaging industry, as well as factory and workwear clothing. The two departments has since then split up.
             </p>
-            <p className="text-lg font-medium text-primary">
-              All of our products can be branded for business and/or personal use.
+            <div className="flex flex-col gap-2 mb-8 font-bold text-primary">
+              <p>WOS Packaging/Pakmateriaal</p>
+              <p>WOS APEX (Clothing, Workwear, Branding & Gifting)</p>
+            </div>
+            <p className="text-lg text-muted-foreground mb-6">
+              We care deeply about providing excellent service here at WOS, especially to our fellow businesses in the agricultural sector as well the manufacturing sector.
+            </p>
+            <p className="text-lg font-medium text-primary italic">
+              We love special relationships with suppliers and clients, and we're always just one message away.
             </p>
           </div>
         </div>
