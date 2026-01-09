@@ -53,7 +53,7 @@ export const products = [
     "name": "Polypropylene Strapping",
     "description": "High-tensile PP strapping for secure pallet bundling and carton sealing.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6502af17c7621.jpg&width=800",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a38a39e94.jpg&width=800",
     "specifications": {
       "Type": "Strapping",
       "Material": "Polypropylene"
@@ -65,7 +65,7 @@ export const products = [
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
     "category": "Custom Solutions",
-    "imageUrl": "/attached_assets/Bulk_Bins_01_1767939456826.jpg",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/65019d5e751eb.jpg&width=800",
     "specifications": {
       "Type": "Bulk Storage"
     },
