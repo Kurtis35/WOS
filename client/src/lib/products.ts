@@ -184,6 +184,122 @@ export const products = [
     ]
   },
   {
+    "id": 13,
+    "name": "Clean MELT Glue",
+    "description": "High-performance hot melt adhesive for industrial packaging.",
+    "category": "Custom Solutions",
+    "imageUrl": "/attached_assets/Clean_MELT_Glue_1767939456829.jpg",
+    "specifications": {
+      "Type": "Adhesive"
+    },
+    "features": [
+      "Strong Bond",
+      "Fast Setting"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Safety Protection Gear",
+    "description": "Essential safety gear for industrial and warehouse protection.",
+    "category": "Securing & Protection",
+    "imageUrl": "/attached_assets/SAFETY_01_1767939456833.jpg",
+    "specifications": {
+      "Type": "Safety"
+    },
+    "features": [
+      "High Visibility",
+      "OSHA Compliant"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Shrink Wrap",
+    "description": "Industrial grade shrink wrap for secure load stabilization.",
+    "category": "Securing & Protection",
+    "imageUrl": "/attached_assets/Shrink_Wrap_1767939456835.jpg",
+    "specifications": {
+      "Type": "Wrap"
+    },
+    "features": [
+      "High Clarity",
+      "Superior Stretch"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Slugs Glue",
+    "description": "Industrial adhesive solution for specialized bonding requirements.",
+    "category": "Custom Solutions",
+    "imageUrl": "/attached_assets/Slugs_Glue_1767939456836.jpg",
+    "specifications": {
+      "Type": "Adhesive"
+    },
+    "features": [
+      "Versatile",
+      "Industrial Strength"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Ladies Bush Long Sleeve Shirt",
+    "description": "Durable and comfortable long sleeve bush shirt for outdoor and field work.",
+    "category": "Apparel",
+    "imageUrl": "/attached_assets/Ladies_Bush_Long_Sleeve_Shirt_1767939062786.png",
+    "specifications": {
+      "Type": "Apparel",
+      "Gender": "Ladies"
+    },
+    "features": [
+      "Durable",
+      "Breathable"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Mens Performance Polo",
+    "description": "High-performance polo shirt for professional and industrial environments.",
+    "category": "Apparel",
+    "imageUrl": "/attached_assets/Mens_Performance_Polo_01_1767939062793.png",
+    "specifications": {
+      "Type": "Apparel",
+      "Gender": "Mens"
+    },
+    "features": [
+      "Moisture Wicking",
+      "Professional Look"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Unisex Vetis Polo",
+    "description": "Versatile unisex polo shirt suitable for various work environments.",
+    "category": "Apparel",
+    "imageUrl": "/attached_assets/Unisex_Vetis_Polo_1767939062799.png",
+    "specifications": {
+      "Type": "Apparel",
+      "Gender": "Unisex"
+    },
+    "features": [
+      "Comfort Fit",
+      "Easy Care"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ladies Hiking Pants",
+    "description": "High-quality hiking pants designed for durability and movement.",
+    "category": "Apparel",
+    "imageUrl": "/attached_assets/Ladies_Hiking_Pants02_1767939062791.png",
+    "specifications": {
+      "Type": "Apparel",
+      "Gender": "Ladies"
+    },
+    "features": [
+      "Flexible",
+      "Hard Wearing"
+    ]
+  },
+  {
     "id": 21,
     "name": "Industrial Cleaning Chemicals",
     "description": "High-strength cleaning chemicals for industrial environments.",
