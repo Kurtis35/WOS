@@ -76,7 +76,7 @@ export const products = [
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a24d06a06.jpg&width=800",
+    "imageUrl": "/attached_assets/9KG_JUMBLE_INNER_1767956378131.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -88,7 +88,7 @@ export const products = [
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a238622c1.jpg&width=800",
+    "imageUrl": "/attached_assets/9KG_Jumble_Outer_1767956378133.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -100,7 +100,7 @@ export const products = [
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3028d39f.jpg&width=800",
+    "imageUrl": "/attached_assets/9KG_OUTER_1767956378134.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -112,7 +112,7 @@ export const products = [
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a38a39e94.jpg&width=800",
+    "imageUrl": "/attached_assets/Buckles_1767956378135.jpg",
     "specifications": {
       "Material": "Metal",
       "Type": "Buckle"
@@ -124,7 +124,7 @@ export const products = [
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a2c5a0720.jpg&width=800",
+    "imageUrl": "/attached_assets/Econo_EV_INNER_1767956378135.jpg",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
