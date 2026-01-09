@@ -146,12 +146,16 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.length > 0 ? featuredProducts.map((product) => (
               <Link key={product.id} href={`/products/${product.id}`} className="group block">
-                <div className="bg-secondary rounded-lg overflow-hidden aspect-[4/5] mb-4 relative">
+                <div className="bg-white rounded-lg overflow-hidden aspect-[4/5] mb-4 relative flex items-center justify-center p-4">
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
                   <img 
                     src={product.imageUrl} 
                     alt={product.name}
-                    className="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                    onError={(e) => {
+                      const target = e.target as HTMLImageElement;
+                      target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
+                    }}
                   />
                 </div>
                 <h3 className="font-bold text-lg mb-1 group-hover:text-accent transition-colors">{product.name}</h3>

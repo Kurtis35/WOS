@@ -275,5 +275,68 @@ export const products = [
       "Type": "Wrap"
     },
     "features": ["High Clarity", "Superior Stretch"]
+  },
+  {
+    "id": 26,
+    "name": "Black Block Export Pallet",
+    "description": "Export-grade black block pallet.",
+    "category": "Pallets",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "specifications": { "Type": "Export", "Color": "Black" },
+    "features": ["Export Ready"]
+  },
+  {
+    "id": 27,
+    "name": "White Block Export Pallet",
+    "description": "Export-grade white block pallet.",
+    "category": "Pallets",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "specifications": { "Type": "Export", "Color": "White" },
+    "features": ["Export Ready"]
+  },
+  {
+    "id": 28,
+    "name": "Green Block Export Pallet",
+    "description": "Export-grade green block pallet.",
+    "category": "Pallets",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "specifications": { "Type": "Export", "Color": "Green" },
+    "features": ["Export Ready"]
+  },
+  {
+    "id": 29,
+    "name": "Econo Pak 3kg Bag",
+    "description": "Economy packaging bag for 3kg of produce.",
+    "category": "Packaging Bags",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
+    "specifications": { "Size": "3kg", "Type": "Econo Pak" },
+    "features": ["Cost Effective"]
+  },
+  {
+    "id": 30,
+    "name": "MK6 - GREEN",
+    "description": "MK6 specialized packaging bag in green.",
+    "category": "Packaging Bags",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
+    "specifications": { "Type": "MK6", "Color": "Green" },
+    "features": ["Durable"]
+  },
+  {
+    "id": 31,
+    "name": "Econo Pak 1kg Bag",
+    "description": "Economy packaging bag for 1kg of produce.",
+    "category": "Packaging Bags",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
+    "specifications": { "Size": "1kg", "Type": "Econo Pak" },
+    "features": ["Cost Effective"]
+  },
+  {
+    "id": 32,
+    "name": "Green Tint Bags",
+    "description": "Green tinted packaging bags for produce.",
+    "category": "Packaging Bags",
+    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
+    "specifications": { "Type": "Tinted", "Color": "Green" },
+    "features": ["Visual Protection"]
   }
 ];

@@ -92,11 +92,15 @@ export default function WosApex() {
               {filteredProducts.map((product) => (
                 <div key={product.id} className="group block h-full">
                   <div className="border rounded-lg p-4 h-full hover:border-accent transition-colors bg-card hover:shadow-lg flex flex-col">
-                    <div className="aspect-square bg-secondary rounded-md overflow-hidden mb-4 relative">
+                    <div className="aspect-square bg-white rounded-md overflow-hidden mb-4 relative flex items-center justify-center p-2">
                       <img 
                         src={product.imageUrl} 
                         alt={product.name}
-                        className="w-full h-full object-cover mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+                        className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                        onError={(e) => {
+                          const target = e.target as HTMLImageElement;
+                          target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
+                        }}
                       />
                     </div>
                     <div className="mb-2">
