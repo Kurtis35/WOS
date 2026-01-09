@@ -44,7 +44,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href="/apex">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto border-white text-white hover:bg-white/10 rounded-none px-8 py-6 text-sm font-bold">
+                <Button size="lg" variant="default" className="w-full sm:w-auto bg-[#00529B] hover:bg-[#003D73] text-white border-none rounded-none px-8 py-6 text-sm font-bold">
                   <Phone className="mr-2 h-5 w-5" /> WOS APEX
                 </Button>
               </Link>
@@ -283,7 +283,7 @@ export default function Home() {
               </Button>
             </Link>
             <Link href="/apex">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10 rounded-none px-10 font-bold uppercase tracking-widest">
+              <Button size="lg" variant="default" className="bg-[#00529B] hover:bg-[#003D73] text-white border-none rounded-none px-10 font-bold uppercase tracking-widest">
                 WOS APEX
               </Button>
             </Link>
