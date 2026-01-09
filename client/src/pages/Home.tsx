@@ -1,23 +1,47 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/Button";
 import { ArrowRight, Box, Recycle, Package, Phone } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useProducts } from "@/hooks/use-products";
+import { useState, useEffect } from "react";
+
+// Slide show images
+import hero1 from "@assets/WhatsApp_Image_2026-01-09_at_10.57.27_AM_1767949567780.jpeg";
+import hero2 from "@assets/WhatsApp_Image_2026-01-09_at_11.12.57_AM_(1)_1767950295118.jpeg";
+import hero3 from "@assets/WhatsApp_Image_2026-01-09_at_10.38.58_AM_(1)_1767950295120.jpeg";
+import hero4 from "@assets/WhatsApp_Image_2026-01-09_at_10.38.58_AM_1767950295121.jpeg";
+
+const slides = [hero1, hero2, hero3, hero4];
 
 export default function Home() {
   const { data: products } = useProducts();
   const featuredProducts = products?.slice(0, 4) || [];
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen pt-16">
       {/* HERO SECTION */}
       <section className="relative h-[80vh] min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80" 
-            alt="Warehouse" 
-            className="w-full h-full object-cover brightness-50"
-          />
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={currentSlide}
+              src={slides[currentSlide]}
+              alt="Packaging Solution"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="w-full h-full object-cover brightness-50"
+            />
+          </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent" />
         </div>
         
