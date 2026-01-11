@@ -76,7 +76,7 @@ export const products = [
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
+    "imageUrl": "/images/packaging-material/jumble-inner.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -88,7 +88,7 @@ export const products = [
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
+    "imageUrl": "/images/packaging-material/9kg-outer.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -100,7 +100,7 @@ export const products = [
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
+    "imageUrl": "/images/packaging-material/9kg-outer.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -112,7 +112,7 @@ export const products = [
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
     "category": "Securing & Protection",
-    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
+    "imageUrl": "/images/packaging-material/buckles.jpg",
     "specifications": {
       "Material": "Metal",
       "Type": "Buckle"
@@ -124,7 +124,7 @@ export const products = [
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
+    "imageUrl": "/images/packaging-material/jumble-inner.jpg",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
@@ -270,7 +270,7 @@ export const products = [
     "name": "Shrink Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
     "category": "Securing & Protection",
-    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
+    "imageUrl": "/images/packaging-material/shrink-wrap.jpg",
     "specifications": {
       "Type": "Wrap"
     },
@@ -290,7 +290,7 @@ export const products = [
     "name": "White Block Export Pallet",
     "description": "Export-grade white block pallet.",
     "category": "Pallets",
-    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
+    "imageUrl": "/images/packaging-material/white-export-pallet.jpg",
     "specifications": { "Type": "Export", "Color": "White" },
     "features": ["Export Ready"]
   },
@@ -299,7 +299,7 @@ export const products = [
     "name": "Green Block Export Pallet",
     "description": "Export-grade green block pallet.",
     "category": "Pallets",
-    "imageUrl": "/images/packaging-material/produce-crates.jpg",
+    "imageUrl": "/images/packaging-material/green-export-pallet.jpg",
     "specifications": { "Type": "Export", "Color": "Green" },
     "features": ["Export Ready"]
   },
