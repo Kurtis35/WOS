@@ -76,7 +76,7 @@ export const products = [
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/jumble-inner.jpg",
+    "imageUrl": "/images/packaging-material/9kg-jumble-inner.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -88,7 +88,7 @@ export const products = [
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/9kg-outer.jpg",
+    "imageUrl": "/images/packaging-material/9kg-jumble-outer.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -100,7 +100,7 @@ export const products = [
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/9kg-outer.jpg",
+    "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -112,7 +112,7 @@ export const products = [
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
     "category": "Securing & Protection",
-    "imageUrl": "/images/packaging-material/buckles.jpg",
+    "imageUrl": "/images/packaging-material/buckles-custom.jpg",
     "specifications": {
       "Material": "Metal",
       "Type": "Buckle"
@@ -124,7 +124,7 @@ export const products = [
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/jumble-inner.jpg",
+    "imageUrl": "/images/packaging-material/econo-ev-inner.jpg",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
@@ -244,7 +244,7 @@ export const products = [
     "name": "9kg Gen Jumblekraft",
     "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
+    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.avif",
     "specifications": {
       "Color": "Kraft",
       "Columns": "2",
