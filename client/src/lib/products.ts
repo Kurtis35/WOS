@@ -162,7 +162,7 @@ export const products = [
     "name": "Econo Pak 1.5kg Bag",
     "description": "Economy packaging bag for 1.5kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
+    "imageUrl": "/images/packaging-material/mk4-kraft-stock.avif",
     "specifications": {
       "Size": "1.5kg",
       "Type": "Econo Pak"
@@ -257,7 +257,7 @@ export const products = [
     "name": "MK4 E/V Gen Outer White",
     "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
+    "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
     "specifications": {
       "Type": "Outer Box",
       "Color": "White",
