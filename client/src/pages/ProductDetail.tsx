@@ -48,6 +48,8 @@ export default function ProductDetail() {
               <img 
                 src={product.imageUrl} 
                 alt={product.name}
+                loading="eager"
+                decoding="async"
                 className="w-full h-full object-cover mix-blend-multiply"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
