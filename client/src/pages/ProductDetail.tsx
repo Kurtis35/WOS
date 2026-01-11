@@ -49,6 +49,10 @@ export default function ProductDetail() {
                 src={product.imageUrl} 
                 alt={product.name}
                 className="w-full h-full object-cover mix-blend-multiply"
+                onError={(e) => {
+                  const target = e.target as HTMLImageElement;
+                  target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
+                }}
               />
             </div>
             
