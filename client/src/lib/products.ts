@@ -4,7 +4,7 @@ export const products = [
     "name": "Black Block Local Pallet",
     "description": "Standard black block pallet designed for local industrial storage and transport within South Africa.",
     "category": "Pallets",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "imageUrl": "/images/packaging-material/black-block-local-pallet.jpg",
     "specifications": {
       "Type": "Local",
       "Color": "Black",
@@ -17,7 +17,7 @@ export const products = [
     "name": "Blue Block Local Pallet",
     "description": "Durable blue block pallet for local supply chain operations.",
     "category": "Pallets",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df278da08.jpg&width=800",
+    "imageUrl": "/images/packaging-material/blue-block-local-pallet.jpg",
     "specifications": {
       "Type": "Local",
       "Color": "Blue",
@@ -30,7 +30,7 @@ export const products = [
     "name": "Paper Cores",
     "description": "High-strength paper cores for industrial winding and packaging applications.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a357eb453.jpg&width=800",
+    "imageUrl": "/images/packaging-material/paper-cores.jpg",
     "specifications": {
       "Type": "Core",
       "Material": "Industrial Paper"
@@ -42,7 +42,7 @@ export const products = [
     "name": "Angle Board",
     "description": "Protective angle boards for pallet edge protection and load stability.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a44e532a4.jpg&width=800",
+    "imageUrl": "/images/packaging-material/angle-board.jpg",
     "specifications": {
       "Type": "Edge Protection"
     },
@@ -53,7 +53,7 @@ export const products = [
     "name": "Polypropylene Strapping",
     "description": "High-tensile PP strapping for secure pallet bundling and carton sealing.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a38a39e94.jpg&width=800",
+    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Type": "Strapping",
       "Material": "Polypropylene"
@@ -65,7 +65,7 @@ export const products = [
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/65019d5e751eb.jpg&width=800",
+    "imageUrl": "/images/packaging-material/bulk-bins.jpg",
     "specifications": {
       "Type": "Bulk Storage"
     },
@@ -76,7 +76,7 @@ export const products = [
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_JUMBLE_INNER_1767956378131.jpg",
+    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -88,7 +88,7 @@ export const products = [
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_Jumble_Outer_1767956378133.jpg",
+    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -100,7 +100,7 @@ export const products = [
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/9KG_OUTER_1767956378134.jpg",
+    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Outer"
@@ -112,7 +112,7 @@ export const products = [
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
     "category": "Securing & Protection",
-    "imageUrl": "/attached_assets/Buckles_1767956378135.jpg",
+    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Material": "Metal",
       "Type": "Buckle"
@@ -124,7 +124,7 @@ export const products = [
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "/attached_assets/Econo_EV_INNER_1767956378135.jpg",
+    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
@@ -136,7 +136,7 @@ export const products = [
     "name": "MK4 Green Apple Bag",
     "description": "Specialized 1kg apple bag with green branding.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": {
       "Size": "1kg",
       "Type": "MK4",
@@ -149,7 +149,7 @@ export const products = [
     "name": "MK4 Red Apple Bag",
     "description": "Specialized 1kg apple bag with red branding.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a09d64d50.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-red-apple-bag.jpg",
     "specifications": {
       "Size": "1kg",
       "Type": "MK4",
@@ -162,7 +162,7 @@ export const products = [
     "name": "Econo Pak 1.5kg Bag",
     "description": "Economy packaging bag for 1.5kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": {
       "Size": "1.5kg",
       "Type": "Econo Pak"
@@ -174,7 +174,7 @@ export const products = [
     "name": "Clean MELT Glue",
     "description": "High-performance hot melt adhesive for industrial packaging.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3bc89456.jpg&width=800",
+    "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -185,7 +185,7 @@ export const products = [
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3a60f9ed.jpg&width=800",
+    "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -196,7 +196,7 @@ export const products = [
     "name": "Industrial Cleaning Chemicals",
     "description": "High-strength cleaning chemicals for industrial environments.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/65070243e8519.jpg&width=800",
+    "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
     "specifications": {
       "Size": "5L/25L",
       "Type": "Chemicals"
@@ -208,7 +208,7 @@ export const products = [
     "name": "Produce Crates",
     "description": "Durable crates for harvesting and transporting produce.",
     "category": "Custom Solutions",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/65019d5e751eb.jpg&width=800",
+    "imageUrl": "/images/packaging-material/produce-crates.jpg",
     "specifications": {
       "Type": "Crate",
       "Material": "Plastic"
@@ -220,7 +220,7 @@ export const products = [
     "name": "Farm Packaging Twine",
     "description": "Strong twine for agricultural packaging and farm use.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6502af17c7621.jpg&width=800",
+    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Type": "Twine"
     },
@@ -231,7 +231,7 @@ export const products = [
     "name": "MK9 Gen Jumble White",
     "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a1f05481d.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Color": "White",
       "Columns": "4",
@@ -244,7 +244,7 @@ export const products = [
     "name": "9kg Gen Jumblekraft",
     "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a21e64906.jpg&width=800",
+    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.jpg",
     "specifications": {
       "Color": "Kraft",
       "Columns": "2",
@@ -257,7 +257,7 @@ export const products = [
     "name": "MK4 E/V Gen Outer White",
     "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
     "category": "Corrugated Boxes/CARTONS",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a28a3818e.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Type": "Outer Box",
       "Color": "White",
@@ -270,7 +270,7 @@ export const products = [
     "name": "Shrink Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
     "category": "Securing & Protection",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a3ce884e1.jpg&width=800",
+    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Type": "Wrap"
     },
@@ -281,7 +281,7 @@ export const products = [
     "name": "Black Block Export Pallet",
     "description": "Export-grade black block pallet.",
     "category": "Pallets",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "imageUrl": "/images/packaging-material/black-block-local-pallet.jpg",
     "specifications": { "Type": "Export", "Color": "Black" },
     "features": ["Export Ready"]
   },
@@ -290,7 +290,7 @@ export const products = [
     "name": "White Block Export Pallet",
     "description": "Export-grade white block pallet.",
     "category": "Pallets",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": { "Type": "Export", "Color": "White" },
     "features": ["Export Ready"]
   },
@@ -299,7 +299,7 @@ export const products = [
     "name": "Green Block Export Pallet",
     "description": "Export-grade green block pallet.",
     "category": "Pallets",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6506df1898516.jpg&width=800",
+    "imageUrl": "/images/packaging-material/produce-crates.jpg",
     "specifications": { "Type": "Export", "Color": "Green" },
     "features": ["Export Ready"]
   },
@@ -308,7 +308,7 @@ export const products = [
     "name": "Econo Pak 3kg Bag",
     "description": "Economy packaging bag for 3kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": { "Size": "3kg", "Type": "Econo Pak" },
     "features": ["Cost Effective"]
   },
@@ -317,7 +317,7 @@ export const products = [
     "name": "MK6 - GREEN",
     "description": "MK6 specialized packaging bag in green.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": { "Type": "MK6", "Color": "Green" },
     "features": ["Durable"]
   },
@@ -326,7 +326,7 @@ export const products = [
     "name": "Econo Pak 1kg Bag",
     "description": "Economy packaging bag for 1kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a0c8b6bc1.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": { "Size": "1kg", "Type": "Econo Pak" },
     "features": ["Cost Effective"]
   },
@@ -335,8 +335,9 @@ export const products = [
     "name": "Green Tint Bags",
     "description": "Green tinted packaging bags for produce.",
     "category": "Packaging Bags",
-    "imageUrl": "https://www.w-o-s.co.za/site-data/image-resizer.php?filename=uploads/6501a08602932.jpg&width=800",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": { "Type": "Tinted", "Color": "Green" },
     "features": ["Visual Protection"]
   }
 ];
+
