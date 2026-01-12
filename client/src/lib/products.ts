@@ -162,7 +162,7 @@ export const products = [
     "name": "Econo Pak 1.5kg Bag",
     "description": "Economy packaging bag for 1.5kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/mk4-kraft-stock.avif",
+    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": {
       "Size": "1.5kg",
       "Type": "Econo Pak"
@@ -185,7 +185,7 @@ export const products = [
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
     "category": "Custom Solutions",
-    "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
+    "imageUrl": "/images/packaging-material/slugs-glue.jpg",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -308,7 +308,7 @@ export const products = [
     "name": "Econo Pak 3kg Bag",
     "description": "Economy packaging bag for 3kg of produce.",
     "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
+    "imageUrl": "/images/packaging-material/econo-pak-3kg-bag.jpg",
     "specifications": { "Size": "3kg", "Type": "Econo Pak" },
     "features": ["Cost Effective"]
   },
