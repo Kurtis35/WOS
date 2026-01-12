@@ -103,8 +103,8 @@ export default function Home() {
             {[
               { label: "Corrugated Boxes", category: "Corrugated+Boxes/CARTONS", img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" },
               { label: "Bags", category: "Bags", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" },
-              { label: "Securing & Protection", category: "Securing+%26+Protection", img: "https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" },
-              { label: "Custom Solutions", category: "Custom+Solutions", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" }
+              { label: "Securing & Protection", category: "Securing+%26+Protection", img: "/images/securing-protection-cat.jpg" },
+              { label: "Custom Solutions", category: "Custom+Solutions", img: "/images/custom-solutions-cat.jpg" }
             ].map((cat, i) => (
               <Link key={i} href={`/products?category=${cat.category}`} className="group min-w-[280px] md:min-w-0 snap-center">
                 <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
@@ -232,9 +232,8 @@ export default function Home() {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-green-100 rounded-xl transform rotate-3" />
-              {/* Unsplash: Recycling/Kraft Paper */}
               <img 
-                src="https://images.unsplash.com/photo-1606297893963-c31a7f052445?w=800&q=80" 
+                src="/images/eco-friendly-section.jpg" 
                 alt="Sustainable Materials" 
                 className="relative rounded-lg shadow-xl"
               />
