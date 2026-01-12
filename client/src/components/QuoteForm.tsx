@@ -54,7 +54,7 @@ export function QuoteForm({ productId, productName, className }: QuoteFormProps)
       `Message:\n${data.message || "No message provided."}`
     );
     
-    window.location.href = `mailto:sales@wospackaging.co.za?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@w-o-s.co.za?subject=${subject}&body=${body}`;
     
     createQuote.mutate(data as any, {
       onSuccess: () => {
