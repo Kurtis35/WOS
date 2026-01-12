@@ -15,6 +15,31 @@ export function Navbar() {
     { href: "/#contact", label: "Contact" },
   ];
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("/#")) {
+      e.preventDefault();
+      const id = href.replace("/#", "");
+      
+      if (location !== "/") {
+        window.location.href = href;
+        return;
+      }
+
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+        setIsOpen(false);
+      }
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-100 h-16">
       <div className="container mx-auto px-4 h-full flex items-center justify-between">
@@ -29,12 +54,17 @@ export function Navbar() {
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className={cn(
-              "text-[10px] font-bold tracking-widest transition-all uppercase px-3 py-1.5 rounded-sm",
-              location === link.href 
-                ? "text-primary bg-primary/5" 
-                : "text-gray-600 hover:text-primary"
-            )}>
+            <Link 
+              key={link.href} 
+              href={link.href} 
+              onClick={(e) => handleScroll(e, link.href)}
+              className={cn(
+                "text-[10px] font-bold tracking-widest transition-all uppercase px-3 py-1.5 rounded-sm",
+                location === link.href 
+                  ? "text-primary bg-primary/5" 
+                  : "text-gray-600 hover:text-primary"
+              )}
+            >
               {link.label}
             </Link>
           ))}
@@ -68,7 +98,10 @@ export function Navbar() {
                 "text-sm font-bold tracking-widest p-4 transition-colors uppercase",
                 location === link.href ? "text-primary bg-primary/5" : "text-gray-800 hover:bg-gray-50"
               )}
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                handleScroll(e, link.href);
+                if (!link.href.startsWith("/#")) setIsOpen(false);
+              }}
             >
               {link.label}
             </Link>
