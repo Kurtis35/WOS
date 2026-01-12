@@ -92,46 +92,34 @@ export default function Home() {
       </section>
 
       {/* CATEGORIES SECTION */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
-          <div className="w-20 h-1 bg-primary mx-auto mb-12" />
+      <section className="py-20 bg-white overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
+            <div className="w-20 h-1 bg-primary mx-auto" />
+          </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <Link href="/products?category=Corrugated+Boxes/CARTONS" className="group">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" alt="Boxes" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Corrugated Boxes</div>
-              </div>
-            </Link>
-            <Link href="/products?category=Bags" className="group">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" alt="Bags" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Bags</div>
-              </div>
-            </Link>
-            <Link href="/products?category=Securing+%26+Protection" className="group">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" alt="Protection" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Securing & Protection</div>
-              </div>
-            </Link>
-            <Link href="/products?category=Custom+Solutions" className="group">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" alt="Custom" className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                <div className="absolute bottom-6 left-6 text-white text-xl font-bold">Custom Solutions</div>
-              </div>
-            </Link>
+          <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
+            {[
+              { label: "Corrugated Boxes", category: "Corrugated+Boxes/CARTONS", img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" },
+              { label: "Bags", category: "Bags", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" },
+              { label: "Securing & Protection", category: "Securing+%26+Protection", img: "https://images.unsplash.com/photo-1590486803833-ffc6de271560?w=800&q=80" },
+              { label: "Custom Solutions", category: "Custom+Solutions", img: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80" }
+            ].map((cat, i) => (
+              <Link key={i} href={`/products?category=${cat.category}`} className="group min-w-[280px] md:min-w-0 snap-center">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                  <img src={cat.img} alt={cat.label} className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                  <div className="absolute bottom-6 left-6 text-white text-xl font-bold">{cat.label}</div>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* FEATURED PRODUCTS */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-end mb-12">
             <div>
@@ -143,9 +131,9 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
             {featuredProducts.length > 0 ? featuredProducts.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`} className="group block">
+              <Link key={product.id} href={`/products/${product.id}`} className="group block min-w-[280px] md:min-w-0 snap-center">
                 <div className="bg-white rounded-lg overflow-hidden aspect-[4/5] mb-4 relative flex items-center justify-center p-4">
                   <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
                   <img 
@@ -164,7 +152,7 @@ export default function Home() {
             )) : (
               // Empty state skeletons
               [1,2,3,4].map(i => (
-                <div key={i} className="animate-pulse">
+                <div key={i} className="animate-pulse min-w-[280px] md:min-w-0">
                   <div className="bg-secondary aspect-[4/5] rounded-lg mb-4" />
                   <div className="h-6 bg-secondary w-2/3 rounded mb-2" />
                   <div className="h-4 bg-secondary w-1/3 rounded" />
