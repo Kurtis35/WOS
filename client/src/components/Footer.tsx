@@ -43,10 +43,10 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-4 uppercase tracking-wider text-sm">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>1234 Industrial Blvd</li>
-              <li>Packaging City, PC 90210</li>
-              <li className="pt-2">sales@wos-packaging.com</li>
-              <li>+1 (555) 123-4567</li>
+              <li>Bakenshoogte Ind Pk</li>
+              <li>Bot River, 7185</li>
+              <li className="pt-2">info@w-o-s.co.za</li>
+              <li>+27 083 320 6499</li>
             </ul>
           </div>
         </div>

@@ -280,8 +280,7 @@ export default function Home() {
               </div>
               <h3 className="font-bold text-xl mb-4 text-white">Location</h3>
               <p className="text-gray-400">
-                16 Industrial Road, Grabouw,<br />
-                Western Cape, South Africa, 7160
+                Bakenshoogte Ind Pk, Bot River, 7185
               </p>
             </div>
 
