@@ -29,7 +29,7 @@ export const products = [
     "id": 3,
     "name": "Paper Cores",
     "description": "High-strength paper cores for industrial winding and packaging applications.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/paper-cores.jpg",
     "specifications": {
       "Type": "Core",
@@ -41,7 +41,7 @@ export const products = [
     "id": 4,
     "name": "Angle Board",
     "description": "Protective angle boards for pallet edge protection and load stability.",
-    "category": "Securing & Protection",
+    "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/angle-board.jpg",
     "specifications": {
       "Type": "Edge Protection"
@@ -52,7 +52,7 @@ export const products = [
     "id": 5,
     "name": "Polypropylene Strapping",
     "description": "High-tensile PP strapping for secure pallet bundling and carton sealing.",
-    "category": "Securing & Protection",
+    "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Type": "Strapping",
@@ -64,7 +64,7 @@ export const products = [
     "id": 6,
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/bulk-bins.jpg",
     "specifications": {
       "Type": "Bulk Storage"
@@ -75,7 +75,7 @@ export const products = [
     "id": 7,
     "name": "9KG Jumble Inner",
     "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-jumble-inner.jpg",
     "specifications": {
       "Capacity": "9kg",
@@ -87,7 +87,7 @@ export const products = [
     "id": 8,
     "name": "9KG Jumble Outer",
     "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-jumble-outer.jpg",
     "specifications": {
       "Capacity": "9kg",
@@ -99,7 +99,7 @@ export const products = [
     "id": 9,
     "name": "9KG Outer",
     "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
     "specifications": {
       "Capacity": "9kg",
@@ -111,7 +111,7 @@ export const products = [
     "id": 10,
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
-    "category": "Securing & Protection",
+    "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/buckles-custom.jpg",
     "specifications": {
       "Material": "Metal",
@@ -123,7 +123,7 @@ export const products = [
     "id": 11,
     "name": "Econo EV Inner",
     "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/econo-ev-inner.jpg",
     "specifications": {
       "Type": "Econo EV Inner",
@@ -173,7 +173,7 @@ export const products = [
     "id": 15,
     "name": "Clean MELT Glue",
     "description": "High-performance hot melt adhesive for industrial packaging.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
     "specifications": {
       "Type": "Adhesive"
@@ -184,7 +184,7 @@ export const products = [
     "id": 18,
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/slugs-glue.jpg",
     "specifications": {
       "Type": "Adhesive"
@@ -195,7 +195,7 @@ export const products = [
     "id": 19,
     "name": "Industrial Cleaning Chemicals",
     "description": "High-strength cleaning chemicals for industrial environments.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
     "specifications": {
       "Size": "5L/25L",
@@ -207,7 +207,7 @@ export const products = [
     "id": 20,
     "name": "Produce Crates",
     "description": "Durable crates for harvesting and transporting produce.",
-    "category": "Custom Solutions",
+    "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/produce-crates.jpg",
     "specifications": {
       "Type": "Crate",
@@ -219,7 +219,7 @@ export const products = [
     "id": 21,
     "name": "Farm Packaging Twine",
     "description": "Strong twine for agricultural packaging and farm use.",
-    "category": "Securing & Protection",
+    "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
     "specifications": {
       "Type": "Twine"
@@ -230,7 +230,7 @@ export const products = [
     "id": 22,
     "name": "MK9 Gen Jumble White",
     "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Color": "White",
@@ -243,7 +243,7 @@ export const products = [
     "id": 23,
     "name": "9kg Gen Jumblekraft",
     "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.avif",
     "specifications": {
       "Color": "Kraft",
@@ -256,7 +256,7 @@ export const products = [
     "id": 24,
     "name": "MK4 E/V Gen Outer White",
     "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
-    "category": "Corrugated Boxes/CARTONS",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
     "specifications": {
       "Type": "Outer Box",
@@ -269,7 +269,7 @@ export const products = [
     "id": 25,
     "name": "Shrink Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
-    "category": "Securing & Protection",
+    "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/shrink-wrap.jpg",
     "specifications": {
       "Type": "Wrap"
