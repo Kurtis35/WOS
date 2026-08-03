@@ -1,11 +1,27 @@
-# WOS Packaging Website (Frontend Only)
+# WOS Packaging Website
 
 ## Overview
-This is a static frontend-only version of the WOS Packaging website.
+Static frontend-only React + Vite website for WOS Packaging (Pakmateriaal/Packaging). Features a homepage, about, products, and contact pages built with React, TypeScript, Tailwind CSS, and Radix UI components.
 
-## Deployment on Netlify
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify.
+## Stack
+- **Frontend:** React 18, TypeScript, Vite
+- **Styling:** Tailwind CSS, Radix UI, shadcn/ui components
+- **Routing:** Wouter
+- **Animations:** Framer Motion
 
-## SPA Handling
-The `netlify.toml` file is configured to handle client-side routing.
+## Running the app
+```
+npm run dev
+```
+Runs on port 5000. No backend or database required — this is a pure frontend app.
+
+## Build for production
+```
+npm run build
+```
+Outputs to `dist/`. Originally configured for Netlify (`netlify.toml`).
+
+## Project structure
+- `client/src/` — all React source code
+- `shared/schema.ts` — shared TypeScript schemas
+- `attached_assets/` — images and other static assets
