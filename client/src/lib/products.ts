@@ -8,22 +8,22 @@ export const products = [
     "specifications": {
       "Type": "Local",
       "Color": "Black",
-      "Material": "Reinforced Wood/Plastic"
+      "Material": "Wood/ Killeen Dry"
     },
     "features": ["Local Transport", "Heavy Duty"]
   },
   {
     "id": 2,
-    "name": "Blue Block Local Pallet",
-    "description": "Durable blue block pallet for local supply chain operations.",
+    "name": "White Block Local Pallet",
+    "description": "Durable local block pallet suitable for fruit packhouses, cold storage facilities and general warehousing applications.",
     "category": "Pallets",
     "imageUrl": "/images/packaging-material/blue-block-local-pallet.jpg",
     "specifications": {
       "Type": "Local",
-      "Color": "Blue",
+      "Block Colour": "White",
       "Material": "Reinforced Wood/Plastic"
     },
-    "features": ["Color Coded", "Industrial Strength"]
+    "features": ["Colour Coded", "Industrial Strength"]
   },
   {
     "id": 3,
@@ -64,7 +64,7 @@ export const products = [
     "id": 6,
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
-    "category": "Industrial Consumables",
+    "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/bulk-bins.jpg",
     "specifications": {
       "Type": "Bulk Storage"
@@ -73,8 +73,8 @@ export const products = [
   },
   {
     "id": 7,
-    "name": "9KG Jumble Inner",
-    "description": "Inner packaging for 9KG jumble boxes, providing structural support and protection.",
+    "name": "9KG Jumble Cartons",
+    "description": "9kg jumble carton system available in various outer configurations including 2 Colour Kraft, 2 Colour White, 4 Colour Kraft, 4 Colour White and Flat White options. Matching inners available according to carton specification.",
     "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-jumble-inner.jpg",
     "specifications": {
@@ -83,31 +83,7 @@ export const products = [
     },
     "features": ["Structural Support", "Protective"]
   },
-  {
-    "id": 8,
-    "name": "9KG Jumble Outer",
-    "description": "Durable outer packaging for 9KG jumble boxes, featuring high-quality fruit branding.",
-    "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/9kg-jumble-outer.jpg",
-    "specifications": {
-      "Capacity": "9kg",
-      "Type": "Outer"
-    },
-    "features": ["High Visibility", "Fruit Branding"]
-  },
-  {
-    "id": 9,
-    "name": "9KG Outer",
-    "description": "Standard 9KG outer carton with 'Fresh Fruit' branding and blue wave design.",
-    "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
-    "specifications": {
-      "Capacity": "9kg",
-      "Type": "Outer"
-    },
-    "features": ["Fresh Fruit Branding", "Stackable"]
-  },
-  {
+ {
     "id": 10,
     "name": "Buckles",
     "description": "Metal buckles for securing polypropylene strapping on pallets and cartons.",
@@ -121,8 +97,8 @@ export const products = [
   },
   {
     "id": 11,
-    "name": "Econo EV Inner",
-    "description": "Economy Export/Import inner support for cartons, featuring ventilated design.",
+    "name": "Econo EV Cartons",
+    "description": "Corrugated carton system with matching Econo EV inners and outers suitable for agricultural packing operations.",
     "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/econo-ev-inner.jpg",
     "specifications": {
@@ -133,8 +109,8 @@ export const products = [
   },
   {
     "id": 12,
-    "name": "MK4 Green Apple Bag",
-    "description": "Specialized 1kg apple bag with green branding.",
+    "name": "MK4 Green Bag",
+    "description": "MK4 bag suitable for agricultural packaging applications. Available in various micron options depending on customer requirements.",
     "category": "Packaging Bags",
     "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": {
@@ -146,8 +122,8 @@ export const products = [
   },
   {
     "id": 13,
-    "name": "MK4 Red Apple Bag",
-    "description": "Specialized 1kg apple bag with red branding.",
+    "name": "MK4 Red Bag",
+    "description": "MK4 bag suitable for agricultural packaging applications. Available in various micron options depending on customer requirements.",
     "category": "Packaging Bags",
     "imageUrl": "/images/packaging-material/mk4-red-apple-bag.jpg",
     "specifications": {
@@ -159,19 +135,19 @@ export const products = [
   },
   {
     "id": 14,
-    "name": "Econo Pak 1.5kg Bag",
-    "description": "Economy packaging bag for 1.5kg of produce.",
+    "name": "Econo 1.5kg Bag",
+    "description": "Economical fruit packing bag designed for 1.5kg produce packaging applications.",
     "category": "Packaging Bags",
     "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": {
       "Size": "1.5kg",
-      "Type": "Econo Pak"
+      "Type": "Econo Bags"
     },
     "features": ["Cost Effective"]
   },
   {
     "id": 15,
-    "name": "Clean MELT Glue",
+    "name": "Clean Melt Glue",
     "description": "High-performance hot melt adhesive for industrial packaging.",
     "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
@@ -192,72 +168,37 @@ export const products = [
     "features": ["Versatile", "Industrial Strength"]
   },
   {
-    "id": 19,
-    "name": "Industrial Cleaning Chemicals",
-    "description": "High-strength cleaning chemicals for industrial environments.",
-    "category": "Industrial Consumables",
-    "imageUrl": "/images/packaging-material/clean-melt-glue.jpg",
-    "specifications": {
-      "Size": "5L/25L",
-      "Type": "Chemicals"
-    },
-    "features": ["Heavy Duty", "Concentrated"]
-  },
-  {
-    "id": 20,
-    "name": "Produce Crates",
-    "description": "Durable crates for harvesting and transporting produce.",
-    "category": "Industrial Consumables",
-    "imageUrl": "/images/packaging-material/produce-crates.jpg",
-    "specifications": {
-      "Type": "Crate",
-      "Material": "Plastic"
-    },
-    "features": ["Stackable", "Ventilated"]
-  },
-  {
-    "id": 21,
-    "name": "Farm Packaging Twine",
-    "description": "Strong twine for agricultural packaging and farm use.",
-    "category": "Protection & Securing",
-    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
-    "specifications": {
-      "Type": "Twine"
-    },
-    "features": ["High Strength", "Weather Resistant"]
-  },
-  {
     "id": 22,
-    "name": "MK9 Gen Jumble White",
-    "description": "A white, 4-column jumble box, likely for larger produce like apples or pears.",
+    "name": "6kg Jumble Cartons",
+    "description": "Open-top corrugated carton commonly used for fresh produce packing and distribution. Available as an inner carton without a separate lid system.",
     "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
     "specifications": {
       "Color": "White",
       "Columns": "4",
-      "Capacity": "9kg+"
+      "Capacity": "6kg+"
     },
     "features": ["Premium Finish", "Large Capacity"]
   },
   {
     "id": 23,
-    "name": "9kg Gen Jumblekraft",
-    "description": "A kraft-colored, 2-column jumble box, designed for 9kg of produce.",
+    "name": "7.5kg Jumble Cartons",
+    "description": "Open-top corrugated carton suitable for produce packing and retail distribution. Available as an inner carton without a separate lid system.",
     "category": "Corrugated Cartons",
     "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.avif",
     "specifications": {
       "Color": "Kraft",
       "Columns": "2",
-      "Capacity": "9kg"
+      "Capacity": "7.5kg"
     },
     "features": ["Produce Packaging", "Breathable"]
   },
   {
     "id": 24,
-    "name": "MK4 E/V Gen Outer White",
-    "description": "A white, 4-column outer box for E/V (Export/Import) purposes.",
+    "name": "MK4 Local Cartons",
+    "description": "Large-format corrugated carton system consisting of matching local inners and outers for fruit packing applications.",
     "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/9kg-outer-custom.jpg",
+    "imageUrl": "MK4 Outer Product Image.png",
     "specifications": {
       "Type": "Outer Box",
       "Color": "White",
@@ -304,18 +245,31 @@ export const products = [
     "features": ["Export Ready"]
   },
   {
+  "id": 33,
+  "name": "Blue Block Export Pallet",
+  "description": "Export-grade blue block pallet suitable for fruit export and agricultural logistics applications.",
+  "category": "Pallets",
+  "imageUrl": "/images/packaging-material/blue-block-export-pallet.jpg",
+    "specifications": {
+      "Type": "Export",
+      "Colour": "Blue"
+    },
+    "features": ["Export Ready"]
+    },
+
+  {
     "id": 29,
-    "name": "Econo Pak 3kg Bag",
-    "description": "Economy packaging bag for 3kg of produce.",
+    "name": "Econo 3kg Bag",
+    "description": "Economical fruit packing bag designed for 3kg produce packaging applications.",
     "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/econo-pak-3kg-bag.jpg",
-    "specifications": { "Size": "3kg", "Type": "Econo Pak" },
+    "imageUrl": "/images/packaging-material/econo-3kg-bag.jpg",
+    "specifications": { "Size": "3kg", "Type": "Econo " },
     "features": ["Cost Effective"]
   },
   {
     "id": 30,
-    "name": "MK6 - GREEN",
-    "description": "MK6 specialized packaging bag in green.",
+    "name": "MK6 - Green Bag",
+    "description": "MK6 bag available in various micron options depending on customer requirements.",
     "category": "Packaging Bags",
     "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
     "specifications": { "Type": "MK6", "Color": "Green" },
@@ -323,21 +277,12 @@ export const products = [
   },
   {
     "id": 31,
-    "name": "Econo Pak 1kg Bag",
-    "description": "Economy packaging bag for 1kg of produce.",
+    "name": "Econo 1kg Bag",
+    "description": "Economical fruit packing bag designed for 1kg produce packaging applications.",
     "category": "Packaging Bags",
     "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
-    "specifications": { "Size": "1kg", "Type": "Econo Pak" },
+    "specifications": { "Size": "1kg", "Type": "Econo" },
     "features": ["Cost Effective"]
-  },
-  {
-    "id": 32,
-    "name": "Green Tint Bags",
-    "description": "Green tinted packaging bags for produce.",
-    "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/mk4-green-apple-bag.jpg",
-    "specifications": { "Type": "Tinted", "Color": "Green" },
-    "features": ["Visual Protection"]
-  }
+  },   
 ];
 

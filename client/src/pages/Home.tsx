@@ -26,218 +26,197 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen pt-16">
-      {/* HERO SECTION */}
-      <section className="relative h-[400px] md:h-[500px] flex items-center overflow-hidden bg-black">
-        <div className="absolute inset-0 z-0">
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={currentSlide}
-              src={slides[currentSlide]}
-              alt="Packaging Solution"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-              className="w-full h-full object-cover brightness-75 blur-sm scale-110"
-            />
-          </AnimatePresence>
-        </div>
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <AnimatePresence mode="wait">
-            <motion.img
-              key={currentSlide}
-              src={slides[currentSlide]}
-              alt="Packaging Solution"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 1 }}
-              className="h-full w-auto max-w-full object-contain relative z-10"
-            />
-          </AnimatePresence>
-          <div className="absolute inset-0 bg-black/40 z-0" />
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10 text-white">
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-2xl"
-          >
-            <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-sm mb-8 inline-block">
-              <h1 className="font-display text-2xl md:text-6xl font-bold leading-tight mb-4">
-                Your Ultimate <br className="hidden md:block"/>
-                Packaging Partner
-              </h1>
-              <p className="text-sm md:text-2xl font-medium text-gray-200">
-                TOP QUALITY PACKAGING AND WORKWEAR SOLUTIONS FOR YOU.
-              </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/products">
-                <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white border-none rounded-none px-8 py-6 text-sm font-bold">
-                  <Package className="mr-2 h-5 w-5" /> VIEW PRODUCTS
-                </Button>
-              </Link>
-              <Link href="/apex">
-                <Button size="lg" variant="default" className="w-full sm:w-auto bg-[#00529B] hover:bg-[#003D73] text-white border-none rounded-none px-8 py-6 text-sm font-bold">
-                  <Phone className="mr-2 h-5 w-5" /> WOS APEX
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+    <><div className="flex flex-col min-h-screen pt-16">
+          {/* HERO SECTION */}
+          <section className="relative h-[400px] md:h-[500px] flex items-center overflow-hidden bg-black">
+              <div className="absolute inset-0 z-0">
+                  <AnimatePresence mode="wait">
+                      <motion.img
+                          key={currentSlide}
+                          src={slides[currentSlide]}
+                          alt="Packaging Solution"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 1 }}
+                          className="w-full h-full object-cover brightness-75 blur-sm scale-110" />
+                  </AnimatePresence>
+              </div>
+              <div className="absolute inset-0 z-0 flex items-center justify-center">
+                  <AnimatePresence mode="wait">
+                      <motion.img
+                          key={currentSlide}
+                          src={slides[currentSlide]}
+                          alt="Packaging Solution"
+                          initial={{ opacity: 0 }}
+                          animate={{ opacity: 1 }}
+                          exit={{ opacity: 0 }}
+                          transition={{ duration: 1 }}
+                          className="h-full w-auto max-w-full object-contain relative z-10" />
+                  </AnimatePresence>
+                  <div className="absolute inset-0 bg-black/40 z-0" />
+              </div>
 
-      {/* CATEGORIES SECTION */}
-      <section className="py-20 bg-white overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
-            <div className="w-20 h-1 bg-primary mx-auto" />
-          </div>
-          
-          <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
-            {[
-              { label: "Corrugated Boxes", category: "Corrugated+Boxes/CARTONS", img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80" },
-              { label: "Bags", category: "Bags", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80" },
-              { label: "Securing & Protection", category: "Securing+%26+Protection", img: "/images/securing-protection-cat.jpg" },
-              { label: "Custom Solutions", category: "Custom+Solutions", img: "/images/custom-solutions-cat.jpg" }
-            ].map((cat, i) => (
-              <Link key={i} href={`/products?category=${cat.category}`} className="group min-w-[280px] md:min-w-0 snap-center">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
-                  <img src={cat.img} alt={cat.label} className="w-full h-full object-cover transition-transform group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
-                  <div className="absolute bottom-6 left-6 text-white text-xl font-bold">{cat.label}</div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+              <div className="container mx-auto px-4 relative z-10 text-white">
+                  <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.8 }}
+                      className="max-w-2xl"
+                  >
+                      <div className="bg-primary/20 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-sm mb-8 inline-block">
+                          <h1 className="font-display text-2xl md:text-6xl font-bold leading-tight mb-4">
+                              Your Trusted <br className="hidden md:block" />
+                              Packaging Partner
+                          </h1>
 
-      {/* FEATURED PRODUCTS */}
-      <section className="py-24 bg-background overflow-hidden">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-end mb-12">
-            <div>
-              <h2 className="text-3xl font-display font-bold mb-2">Featured Products</h2>
-              <p className="text-muted-foreground">High-performance solutions for every industry.</p>
-            </div>
-            <Link href="/products" className="hidden md:flex items-center text-primary font-medium hover:underline">
-              View All Products <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
+                          <p className="text-sm md:text-2xl font-medium text-gray-200">
+                              From agriculture and food production to manufacturing and logistics, we deliver reliable packaging solutions tailored to your business.
+                          </p>
+                      </div>
+                      <div className="flex flex-col sm:flex-row gap-4">
+                          <Link href="/products">
+                              <Button size="lg" className="w-full sm:w-auto bg-primary hover:bg-primary/90 text-white border-none rounded-none px-8 py-6 text-sm font-bold">
+                                  <Package className="mr-2 h-5 w-5" /> VIEW PRODUCTS
+                              </Button>
+                          </Link>
+                          <Link href="/apex">
+                              <Button size="lg" variant="default" className="w-full sm:w-auto bg-[#00529B] hover:bg-[#003D73] text-white border-none rounded-none px-8 py-6 text-sm font-bold">
+                                  <Phone className="mr-2 h-5 w-5" /> WOS APEX
+                              </Button>
+                          </Link>
+                      </div>
+                  </motion.div>
+              </div>
+          </section>
 
-          <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
-            {featuredProducts.length > 0 ? featuredProducts.map((product) => (
-              <Link key={product.id} href={`/products/${product.id}`} className="group block min-w-[280px] md:min-w-0 snap-center">
-                <div className="bg-white rounded-lg overflow-hidden aspect-[4/5] mb-4 relative flex items-center justify-center p-4">
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
-                  <img 
-                    src={product.imageUrl} 
-                    alt={product.name}
-                    className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement;
-                      target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
-                    }}
-                  />
-                </div>
-                <h3 className="font-bold text-lg mb-1 group-hover:text-accent transition-colors">{product.name}</h3>
-                <p className="text-sm text-muted-foreground">{product.category}</p>
-              </Link>
-            )) : (
-              // Empty state skeletons
-              [1,2,3,4].map(i => (
-                <div key={i} className="animate-pulse min-w-[280px] md:min-w-0">
-                  <div className="bg-secondary aspect-[4/5] rounded-lg mb-4" />
-                  <div className="h-6 bg-secondary w-2/3 rounded mb-2" />
-                  <div className="h-4 bg-secondary w-1/3 rounded" />
-                </div>
-              ))
-            )}
-          </div>
-          
-          <div className="mt-8 md:hidden text-center">
-            <Link href="/products" className="inline-flex items-center text-primary font-medium hover:underline">
-              View All Products <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
+          {/* CATEGORIES SECTION */}
+          <section className="py-20 bg-white overflow-hidden">
+              <div className="container mx-auto px-4">
+                  <div className="text-center mb-12">
+                      <h2 className="text-3xl font-display font-bold mb-2 uppercase tracking-widest">Main Categories</h2>
+                      <div className="w-20 h-1 bg-primary mx-auto" />
+                  </div>
 
-      {/* ABOUT SECTION */}
+                  <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
+                      {[
+                          {
+                              label: "Corrugated Cartons",
+                              category: "Corrugated Cartons",
+                              img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80"
+                          },
+                          {
+                              label: "Packaging Bags",
+                              category: "Packaging Bags",
+                              img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                          },
+                          {
+                              label: "Pallets",
+                              category: "Pallets",
+                              img: "/images/pallets-category.jpg"
+                          },
+                          {
+                              label: "Protection & Securing",
+                              category: "Protection & Securing",
+                              img: "/images/securing-protection-cat.jpg"
+                          },
+                          {
+                              label: "Industrial Consumables",
+                              category: "Industrial Consumables",
+                              img: "/images/custom-solutions-cat.jpg"
+                          }
+                      ].map((cat, i) => (
+                          <Link key={i} href={`/products?category=${cat.category}`} className="group min-w-[280px] md:min-w-0 snap-center">
+                              <div className="relative aspect-[4/3] overflow-hidden rounded-sm mb-4">
+                                  <img src={cat.img} alt={cat.label} className="w-full h-full object-cover transition-transform group-hover:scale-105" />
+                                  <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors" />
+                                  <div className="absolute bottom-6 left-6 text-white text-xl font-bold">{cat.label}</div>
+                              </div>
+                          </Link>
+                      ))}
+                  </div>
+              </div>
+          </section>
+
+          {/* FEATURED PRODUCTS */}
+          <section className="py-24 bg-background overflow-hidden">
+              <div className="container mx-auto px-4">
+                  <div className="flex justify-between items-end mb-12">
+                      <div>
+                          <h2 className="text-3xl font-display font-bold mb-2">Featured Products</h2>
+                          <p className="text-muted-foreground">High-performance solutions for every industry.</p>
+                      </div>
+                      <Link href="/products" className="hidden md:flex items-center text-primary font-medium hover:underline">
+                          View All Products <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                  </div>
+
+                  <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-6 md:pb-0 scrollbar-hide snap-x snap-mandatory px-4 md:px-0 -mx-4 md:mx-0">
+                      {featuredProducts.length > 0 ? featuredProducts.map((product) => (
+                          <Link key={product.id} href={`/products/${product.id}`} className="group block min-w-[280px] md:min-w-0 snap-center">
+                              <div className="bg-white rounded-lg overflow-hidden aspect-[4/5] mb-4 relative flex items-center justify-center p-4">
+                                  <div className="absolute inset-0 bg-black/5 group-hover:bg-black/0 transition-colors" />
+                                  <img
+                                      src={product.imageUrl}
+                                      alt={product.name}
+                                      className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                                      onError={(e) => {
+                                          const target = e.target as HTMLImageElement;
+                                          target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
+                                      } } />
+                              </div>
+                              <h3 className="font-bold text-lg mb-1 group-hover:text-accent transition-colors">{product.name}</h3>
+                              <p className="text-sm text-muted-foreground">{product.category}</p>
+                          </Link>
+                      )) : (
+                          // Empty state skeletons
+                          [1, 2, 3, 4].map(i => (
+                              <div key={i} className="animate-pulse min-w-[280px] md:min-w-0">
+                                  <div className="bg-secondary aspect-[4/5] rounded-lg mb-4" />
+                                  <div className="h-6 bg-secondary w-2/3 rounded mb-2" />
+                                  <div className="h-4 bg-secondary w-1/3 rounded" />
+                              </div>
+                          ))
+                      )}
+                  </div>
+
+                  <div className="mt-8 md:hidden text-center">
+                      <Link href="/products" className="inline-flex items-center text-primary font-medium hover:underline">
+                          View All Products <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                  </div>
+              </div>
+          </section>
       <section id="about" className="py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-display font-bold mb-6 uppercase tracking-widest">About WOS Packaging</h2>
+
+            <h2 className="text-3xl font-display font-bold mb-6 uppercase tracking-widest">
+              About WOS Packaging
+            </h2>
+
             <div className="w-20 h-1 bg-primary mx-auto mb-8" />
-            <p className="text-lg text-muted-foreground mb-6">
-              WOS Packaging- a Trading company of White Operating Solutions (pty) ltd in the Western Cape, South Africa.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
+          <p className="text-lg text-muted-foreground mb-6">
+              WOS Packaging, a trading division of White Operating Solutions (Pty) Ltd, is a trusted supplier of packaging materials, pallets, securing products and industrial consumables based in the Western Cape, South Africa.
+          </p>
+
+          <p className="text-lg text-muted-foreground mb-6">
+              We serve businesses across a wide range of industries including agriculture, fresh produce, food processing, manufacturing, warehousing and logistics. Through our extensive supplier network, we provide reliable packaging solutions tailored to the unique requirements of each customer.
+          </p>
+
+          <p className="text-lg text-muted-foreground">
+              From corrugated cartons and packaging bags to pallets, strapping, shrink wrap and industrial consumables, our focus is on delivering quality products, dependable service and long-term partnerships that help our customers operate efficiently and grow with confidence.
+          </p>
+      <p className="text-lg text-muted-foreground mb-6">
               WOS is a family owned company, started in 2020 in the packaging industry, as well as factory and workwear clothing. The two departments has since then split up.
-            </p>
-            <div className="flex flex-col gap-2 mb-8 font-bold text-primary">
+          </p><div className="flex flex-col gap-2 mb-8 font-bold text-primary">
               <p>WOS Packaging/Pakmateriaal</p>
               <p>WOS APEX (Clothing, Workwear, Branding & Gifting)</p>
-            </div>
-            <p className="text-lg text-muted-foreground mb-6">
+          </div><p className="text-lg text-muted-foreground mb-6">
               We care deeply about providing excellent service here at WOS, especially to our fellow businesses in the agricultural sector as well the manufacturing sector.
-            </p>
-            <p className="text-lg font-medium text-primary italic">
+          </p><p className="text-lg font-medium text-primary italic">
               We love special relationships with suppliers and clients, and we're always just one message away.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* SUSTAINABILITY */}
-      <section id="sustainability" className="py-24 bg-zinc-50 border-y">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="flex items-center gap-2 text-green-600 font-bold mb-4">
-                <Recycle className="h-5 w-5" />
-                <span>SUSTAINABILITY FIRST</span>
-              </div>
-              <h2 className="text-4xl font-display font-bold mb-6">
-                Eco-Friendly By Design
-              </h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                We believe industrial strength doesn't have to come at an environmental cost. 
-                Our packaging solutions utilize high-percentage recycled content and are 
-                fully recyclable.
-              </p>
-              <ul className="space-y-4 mb-8">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 mt-2 rounded-full bg-green-600" />
-                  <span>FSC® Certified Materials Available</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 mt-2 rounded-full bg-green-600" />
-                  <span>Water-based, non-toxic inks</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 mt-2 rounded-full bg-green-600" />
-                  <span>Closed-loop recycling programs</span>
-                </li>
-              </ul>
-              <Link href="/products">
-                <Button variant="outline">Browse Eco Options</Button>
-              </Link>
-            </div>
-            <div className="relative">
-              <div className="absolute -inset-4 bg-green-100 rounded-xl transform rotate-3" />
-              <img 
-                src="/images/eco-friendly-section.jpg" 
-                alt="Sustainable Materials" 
-                className="relative rounded-lg shadow-xl"
-              />
-            </div>
+          </p>
           </div>
         </div>
       </section>
@@ -317,7 +296,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
-    </div>
-  );
-}
+              </section>
+            </div>
+          </>
+          );
+        }

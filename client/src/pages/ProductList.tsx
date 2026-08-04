@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { useProducts } from "@/hooks/use-products";
 import { Button } from "@/components/ui/Button";
@@ -9,31 +9,86 @@ export default function ProductList() {
   const { data: products, isLoading } = useProducts();
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get("category");
+
+    if (category) {
+      setSelectedCategory(category);
+    }
+  }, []);
 
   // Extract unique categories
-  const categories = products 
-    ? Array.from(new Set(products.map(p => p.category))) 
-    : [];
+  const categories = [
+    "Corrugated Cartons",
+    "Packaging Bags",
+    "Pallets",
+    "Protection & Securing",
+    "Industrial Consumables",
+  ];
+  const productOrder: Record<string, number> = {
+    "9kg Jumble Cartons": 1,
+    "6kg Jumble Cartons": 2,
+    "7kg Jumble Cartons": 3,
+    "MK4 Local Cartons": 4,
+    "Econo EV Cartons": 5,
+    "Bulk Bins": 6,
 
-  const filteredProducts = products?.filter(product => {
-    const matchesSearch = product.name.toLowerCase().includes(search.toLowerCase());
-    const matchesCategory = selectedCategory ? product.category === selectedCategory : true;
-    return matchesSearch && matchesCategory;
-  });
+    "Econo 1kg Bag": 1,
+    "Econo 1.5kg Bag": 2,
+    "Econo 3kg Bag": 3,
+    "MK4 Green Bag": 4,
+    "MK4 Red Bag": 5,
+    "MK6 Green Bag": 6,
+
+    "Black Block Pallet": 1,
+    "White Block Pallet": 2,
+    "Black Block Export Pallet": 3,
+    "White Block Export Pallet": 4,
+    "Green Block Export Pallet": 5,
+    "Blue Block Export Pallet": 6,
+
+    "Angle Board": 1,
+    "Polypropylene Strapping": 2,
+    Buckles: 3,
+    "Shrink Wrap": 4,
+    "Farm Packaging Twine": 5,
+
+    "Paper Cores": 1,
+    "Clean Melt Glue": 2,
+    "Slugs Glue": 3,
+  };
+  const filteredProducts = products
+    ?.filter((product) => {
+      const matchesSearch = product.name
+        .toLowerCase()
+        .includes(search.toLowerCase());
+      const matchesCategory = selectedCategory
+        ? product.category === selectedCategory
+        : true;
+      return matchesSearch && matchesCategory;
+    })
+    .sort((a, b) => {
+      const orderA = productOrder[a.name] ?? 999;
+      const orderB = productOrder[b.name] ?? 999;
+      return orderA - orderB;
+    });
 
   return (
     <div className="container mx-auto px-4 py-12 pt-28">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10 gap-4">
         <div>
           <h1 className="text-4xl font-display font-bold mb-2">Our Products</h1>
-          <p className="text-muted-foreground">Industrial grade packaging for every application.</p>
+          <p className="text-muted-foreground">
+            Industrial grade packaging for every application.
+          </p>
         </div>
-        
+
         <div className="flex gap-2 w-full md:w-auto">
           <div className="relative w-full md:w-64">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
-            <Input 
-              placeholder="Search products..." 
+            <Input
+              placeholder="Search products..."
               className="pl-9"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -53,20 +108,20 @@ export default function ProductList() {
               <button
                 onClick={() => setSelectedCategory(null)}
                 className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
-                  selectedCategory === null 
-                    ? "bg-primary text-primary-foreground font-medium" 
+                  selectedCategory === null
+                    ? "bg-primary text-primary-foreground font-medium"
                     : "hover:bg-secondary text-muted-foreground"
                 }`}
               >
                 All Categories
               </button>
-              {categories.map(category => (
+              {categories.map((category) => (
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
                   className={`w-full text-left px-2 py-1.5 rounded-md text-sm transition-colors ${
-                    selectedCategory === category 
-                      ? "bg-primary text-primary-foreground font-medium" 
+                    selectedCategory === category
+                      ? "bg-primary text-primary-foreground font-medium"
                       : "hover:bg-secondary text-muted-foreground"
                   }`}
                 >
@@ -81,7 +136,7 @@ export default function ProductList() {
         <div className="min-h-[400px]">
           {isLoading ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map(i => (
+              {[1, 2, 3, 4, 5, 6].map((i) => (
                 <div key={i} className="animate-pulse">
                   <div className="bg-secondary aspect-square rounded-lg mb-3" />
                   <div className="h-6 bg-secondary w-3/4 rounded mb-2" />
@@ -92,19 +147,26 @@ export default function ProductList() {
           ) : filteredProducts && filteredProducts.length > 0 ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredProducts.map((product) => (
-                <Link key={product.id} href={`/products/${product.id}`} className="group block h-full">
+                <Link
+                  key={product.id}
+                  href={`/products/${product.id}`}
+                  className="group block h-full"
+                >
                   <div className="border rounded-lg p-4 h-full hover:border-accent transition-colors bg-card hover:shadow-lg flex flex-col">
                     <div className="aspect-square bg-white rounded-md overflow-hidden mb-4 relative flex items-center justify-center p-2">
-                      <img 
-                        src={product.imageUrl} 
+                      <img
+                        src={product.imageUrl}
                         alt={product.name}
                         loading="lazy"
                         decoding="async"
                         className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
-                          target.src = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
-                          console.error(`Failed to load image: ${product.imageUrl}`);
+                          target.src =
+                            "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
+                          console.error(
+                            `Failed to load image: ${product.imageUrl}`,
+                          );
                         }}
                       />
                     </div>
@@ -130,10 +192,15 @@ export default function ProductList() {
             </div>
           ) : (
             <div className="text-center py-12 border-2 border-dashed rounded-lg">
-              <h3 className="text-lg font-medium text-muted-foreground">No products found</h3>
-              <Button 
-                variant="link" 
-                onClick={() => { setSearch(""); setSelectedCategory(null); }}
+              <h3 className="text-lg font-medium text-muted-foreground">
+                No products found
+              </h3>
+              <Button
+                variant="link"
+                onClick={() => {
+                  setSearch("");
+                  setSelectedCategory(null);
+                }}
               >
                 Clear all filters
               </Button>
