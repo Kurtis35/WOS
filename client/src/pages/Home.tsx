@@ -103,27 +103,27 @@ export default function Home() {
                           {
                               label: "Corrugated Cartons",
                               category: "Corrugated Cartons",
-                              img: "https://images.unsplash.com/photo-1595246140625-573b715d11dc?w=800&q=80"
+                              img: "/images/9kg%202col%20Outer.jpeg"
                           },
                           {
                               label: "Packaging Bags",
                               category: "Packaging Bags",
-                              img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80"
+                              img: "/images/Econo%203kg%20Sak.jpeg"
                           },
                           {
                               label: "Pallets",
                               category: "Pallets",
-                              img: "/images/pallets-category.jpg"
+                              img: "/images/Bloublok.jpeg"
                           },
                           {
                               label: "Protection & Securing",
                               category: "Protection & Securing",
-                              img: "/images/securing-protection-cat.jpg"
+                              img: "/images/kosebent-edge-protectors-angle-board-cantoneras-miopaper-beyaz-blanco-white-e1680209297230.jpg"
                           },
                           {
                               label: "Industrial Consumables",
                               category: "Industrial Consumables",
-                              img: "/images/custom-solutions-cat.jpg"
+                              img: "/images/Glue_slugs_b36252a512.jpg"
                           }
                       ].map((cat, i) => (
                           <Link key={i} href={`/products?category=${cat.category}`} className="group min-w-[280px] md:min-w-0 snap-center">

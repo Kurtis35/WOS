@@ -17,7 +17,7 @@ export const products = [
     "name": "White Block Local Pallet",
     "description": "Durable local block pallet suitable for fruit packhouses, cold storage facilities and general warehousing applications.",
     "category": "Pallets",
-    "imageUrl": "/images/packaging-material/blue-block-local-pallet.jpg",
+    "imageUrl": "/images/9-slat-White-block-pallet.jpg",
     "specifications": {
       "Type": "Local",
       "Block Colour": "White",
@@ -27,7 +27,7 @@ export const products = [
   },
   {
     "id": 3,
-    "name": "Paper Cores",
+    "name": "Bin Cores",
     "description": "High-strength paper cores for industrial winding and packaging applications.",
     "category": "Industrial Consumables",
     "imageUrl": "/images/packaging-material/paper-cores.jpg",
@@ -42,7 +42,7 @@ export const products = [
     "name": "Angle Board",
     "description": "Protective angle boards for pallet edge protection and load stability.",
     "category": "Protection & Securing",
-    "imageUrl": "/images/packaging-material/angle-board.jpg",
+    "imageUrl": "/images/kosebent-edge-protectors-angle-board-cantoneras-miopaper-beyaz-blanco-white-e1680209297230.jpg",
     "specifications": {
       "Type": "Edge Protection"
     },
@@ -53,7 +53,7 @@ export const products = [
     "name": "Polypropylene Strapping",
     "description": "High-tensile PP strapping for secure pallet bundling and carton sealing.",
     "category": "Protection & Securing",
-    "imageUrl": "/images/packaging-material/polypropylene-strapping.jpg",
+    "imageUrl": "/images/blue-strapsun.jpg",
     "specifications": {
       "Type": "Strapping",
       "Material": "Polypropylene"
@@ -65,6 +65,7 @@ export const products = [
     "name": "Bulk Bins",
     "description": "Large capacity bulk bins for agricultural and industrial storage.",
     "category": "Corrugated Cartons",
+    "subcategory": "Other Cartons",
     "imageUrl": "/images/packaging-material/bulk-bins.jpg",
     "specifications": {
       "Type": "Bulk Storage"
@@ -73,10 +74,11 @@ export const products = [
   },
   {
     "id": 7,
-    "name": "9KG Jumble Cartons",
+    "name": "9KG Jumble Inner",
     "description": "9kg jumble carton system available in various outer configurations including 2 Colour Kraft, 2 Colour White, 4 Colour Kraft, 4 Colour White and Flat White options. Matching inners available according to carton specification.",
     "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/9kg-jumble-inner.jpg",
+    "subcategory": "9kg Jumble",
+    "imageUrl": "/images/9kg%20Jumble%20Inner%20product%20image.png",
     "specifications": {
       "Capacity": "9kg",
       "Type": "Inner"
@@ -97,10 +99,11 @@ export const products = [
   },
   {
     "id": 11,
-    "name": "Econo EV Cartons",
+    "name": "Econo EV Inner",
     "description": "Corrugated carton system with matching Econo EV inners and outers suitable for agricultural packing operations.",
     "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/econo-ev-inner.jpg",
+    "subcategory": "Econo EV",
+    "imageUrl": "/images/Econo%20Outer.jpeg",
     "specifications": {
       "Type": "Econo EV Inner",
       "Feature": "Ventilated"
@@ -161,7 +164,7 @@ export const products = [
     "name": "Slugs Glue",
     "description": "Industrial adhesive solution for specialized bonding requirements.",
     "category": "Industrial Consumables",
-    "imageUrl": "/images/packaging-material/slugs-glue.jpg",
+    "imageUrl": "/images/Glue_slugs_b36252a512.jpg",
     "specifications": {
       "Type": "Adhesive"
     },
@@ -169,10 +172,11 @@ export const products = [
   },
   {
     "id": 22,
-    "name": "6kg Jumble Cartons",
+    "name": "6kg Jumble Inners",
     "description": "Open-top corrugated carton commonly used for fresh produce packing and distribution. Available as an inner carton without a separate lid system.",
     "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/mk9-gen-jumble-white.jpg",
+    "subcategory": "Other Cartons",
+    "imageUrl": "/images/9kg%20Jumble%20Inner%20product%20image.png",
     "specifications": {
       "Color": "White",
       "Columns": "4",
@@ -182,10 +186,11 @@ export const products = [
   },
   {
     "id": 23,
-    "name": "7.5kg Jumble Cartons",
+    "name": "7.5kg Jumble Inners",
     "description": "Open-top corrugated carton suitable for produce packing and retail distribution. Available as an inner carton without a separate lid system.",
     "category": "Corrugated Cartons",
-    "imageUrl": "/images/packaging-material/9kg-gen-jumblekraft.avif",
+    "subcategory": "Other Cartons",
+    "imageUrl": "/images/9kg%20Jumble%20Inner%20product%20image.png",
     "specifications": {
       "Color": "Kraft",
       "Columns": "2",
@@ -195,20 +200,23 @@ export const products = [
   },
   {
     "id": 24,
-    "name": "MK4 Local Cartons",
+    "name": "MK4 Local Inners",
     "description": "Large-format corrugated carton system consisting of matching local inners and outers for fruit packing applications.",
     "category": "Corrugated Cartons",
-    "imageUrl": "MK4 Outer Product Image.png",
-    "specifications": {
+    "subcategory": "MK4",
+     "imageUrl": "/images/Mk4%20Inner%20Product%20Image.png",
+
+"specifications": {
       "Type": "Outer Box",
       "Color": "White",
       "Purpose": "E/V"
     },
+
     "features": ["Export Grade", "High Visibility"]
   },
   {
     "id": 25,
-    "name": "Shrink Wrap",
+    "name": "Pallet Wrap",
     "description": "Industrial grade shrink wrap for secure load stabilization.",
     "category": "Protection & Securing",
     "imageUrl": "/images/packaging-material/shrink-wrap.jpg",
@@ -222,7 +230,7 @@ export const products = [
     "name": "Black Block Export Pallet",
     "description": "Export-grade black block pallet.",
     "category": "Pallets",
-    "imageUrl": "/images/packaging-material/black-block-local-pallet.jpg",
+    "imageUrl": "/images/Black-block-pallet.jpg",
     "specifications": { "Type": "Export", "Color": "Black" },
     "features": ["Export Ready"]
   },
@@ -231,7 +239,7 @@ export const products = [
     "name": "White Block Export Pallet",
     "description": "Export-grade white block pallet.",
     "category": "Pallets",
-    "imageUrl": "/images/packaging-material/white-export-pallet.jpg",
+    "imageUrl": "/images/9-slat-White-block-pallet.jpg",
     "specifications": { "Type": "Export", "Color": "White" },
     "features": ["Export Ready"]
   },
@@ -249,7 +257,7 @@ export const products = [
   "name": "Blue Block Export Pallet",
   "description": "Export-grade blue block pallet suitable for fruit export and agricultural logistics applications.",
   "category": "Pallets",
-  "imageUrl": "/images/packaging-material/blue-block-export-pallet.jpg",
+  "imageUrl": "/images/Bloublok.jpeg",
     "specifications": {
       "Type": "Export",
       "Colour": "Blue"
@@ -262,7 +270,7 @@ export const products = [
     "name": "Econo 3kg Bag",
     "description": "Economical fruit packing bag designed for 3kg produce packaging applications.",
     "category": "Packaging Bags",
-    "imageUrl": "/images/packaging-material/econo-3kg-bag.jpg",
+    "imageUrl": "/images/Econo%203kg%20Sak.jpeg",
     "specifications": { "Size": "3kg", "Type": "Econo " },
     "features": ["Cost Effective"]
   },
@@ -284,5 +292,77 @@ export const products = [
     "specifications": { "Size": "1kg", "Type": "Econo" },
     "features": ["Cost Effective"]
   },   
-];
-
+  {
+    "id": 40,
+    "name": "9kg Jumble Outer (2 Colour White)",
+    "description": "2 Colour white outer carton designed for 9kg fresh produce packing applications.",
+    "category": "Corrugated Cartons",
+    "subcategory": "9kg Jumble",
+    "imageUrl": "/images/9kg 2col Outer.jpeg",
+    "specifications": {
+      "Type": "Outer",
+      "Capacity": "9kg",
+      "Print": "2 Colour White"
+    },
+    "features": ["Export Grade", "High Visibility"]
+  },
+  {
+    "id": 41,
+    "name": "9kg Jumble Outer (4 Colour White)",
+    "description": "Premium 4 Colour white outer carton suitable for fresh produce packing and retail presentation.",
+    "category": "Corrugated Cartons",
+    "subcategory": "9kg Jumble",
+    "imageUrl": "/images/9kg 4col Outer.jpeg",
+    "specifications": {
+      "Type": "Outer",
+      "Capacity": "9kg",
+      "Print": "4 Colour White"
+    },
+    "features": ["Premium Branding", "Export Grade"]
+  },
+  {
+    "id": 42,
+    "name": "MK4 Outer",
+    "description": "Corrugated outer carton used within the MK4 carton range for fresh produce packing applications.",
+    "category": "Corrugated Cartons",
+    "subcategory": "MK4",
+    "imageUrl": "/images/MK4%20Outer%20Product%20Image.png",
+    "specifications": {
+      "Type": "Inner",
+      "Application": "Fresh Produce"
+    },
+    "features": ["Strong Construction", "Produce Protection"]
+  },
+  {
+    "id": 45,
+    "name": "9kg Jumble Outer (2 Colour Kraft)",
+    "description": "2 Colour kraft outer carton designed for 9kg fresh produce packing applications.",
+    "category": "Corrugated Cartons",
+    "subcategory": "9kg Jumble",
+    "imageUrl": "/images/9kg 2col Kraft Outer.jpeg",
+    "specifications": {
+      "Type": "Outer",
+      "Capacity": "9kg",
+      "Print": "2 Colour Kraft"
+    },
+    "features": ["Export Grade", "Cost Effective"]
+  },
+  {
+    "id": 46,
+    "name": "Econo EV Outer",
+    "description": "Corrugated outer carton designed for use with Econo EV inners in fresh produce packing operations. Provides protection, stacking strength and secure transport of packed fruit.",
+    "category": "Corrugated Cartons",
+    "subcategory": "Econo EV",
+    "imageUrl": "/images/Econo Outer.jpeg",
+    "specifications": {
+      "Type": "Outer",
+      "Application": "Fruit Packaging",
+      "Color": "White"
+    },
+    "features": [
+      "Stackable",
+      "Protective",
+      "Export Grade"
+    ]
+  },
+  ]

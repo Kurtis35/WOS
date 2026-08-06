@@ -73,6 +73,20 @@ export default function ProductList() {
       const orderB = productOrder[b.name] ?? 999;
       return orderA - orderB;
     });
+  const groupedProducts = filteredProducts?.reduce(
+    (groups: Record<string, any[]>, product) => {
+      const group = product.subcategory || "Other";
+
+      if (!groups[group]) {
+        groups[group] = [];
+      }
+
+      groups[group].push(product);
+
+      return groups;
+    },
+    {}
+  );
 
   return (
     <div className="container mx-auto px-4 py-12 pt-28">
@@ -134,62 +148,62 @@ export default function ProductList() {
 
         {/* Product Grid */}
         <div className="min-h-[400px]">
-          {isLoading ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="animate-pulse">
-                  <div className="bg-secondary aspect-square rounded-lg mb-3" />
-                  <div className="h-6 bg-secondary w-3/4 rounded mb-2" />
-                  <div className="h-4 bg-secondary w-1/2 rounded" />
-                </div>
-              ))}
-            </div>
-          ) : filteredProducts && filteredProducts.length > 0 ? (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {filteredProducts.map((product) => (
-                <Link
-                  key={product.id}
-                  href={`/products/${product.id}`}
-                  className="group block h-full"
-                >
-                  <div className="border rounded-lg p-4 h-full hover:border-accent transition-colors bg-card hover:shadow-lg flex flex-col">
-                    <div className="aspect-square bg-white rounded-md overflow-hidden mb-4 relative flex items-center justify-center p-2">
-                      <img
-                        src={product.imageUrl}
-                        alt={product.name}
-                        loading="lazy"
-                        decoding="async"
-                        className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.src =
-                            "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80";
-                          console.error(
-                            `Failed to load image: ${product.imageUrl}`,
-                          );
-                        }}
-                      />
-                    </div>
-                    <div className="mb-2">
-                      <span className="text-xs font-bold text-accent uppercase tracking-wider">
-                        {product.category}
-                      </span>
-                    </div>
-                    <h3 className="font-bold text-xl mb-2 group-hover:text-primary transition-colors">
-                      {product.name}
-                    </h3>
-                    <p className="text-muted-foreground text-sm line-clamp-2 mb-4 flex-grow">
-                      {product.description}
-                    </p>
-                    <div className="mt-auto pt-4 border-t">
-                      <span className="text-sm font-medium text-primary flex items-center group-hover:underline">
-                        View Details <ArrowRight className="ml-1 h-3 w-3" />
-                      </span>
+          {filteredProducts && filteredProducts.length > 0 ? (
+            <div className="space-y-12">
+              Object.entries(groupedProducts ?? {}).map(
+                ([groupName, products]) => (
+                  <div key={groupName}>
+                    <h2 className="text-2xl font-bold mb-6 border-b pb-2">
+                      {groupName}
+                    </h2>
+
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {products.map((product: any) => (
+                        <Link
+                          key={product.id}
+                          href={`/products/${product.id}`}
+                          className="group block h-full"
+                        >
+                          <div className="border rounded-lg p-4 h-full hover:border-accent transition-colors bg-card hover:shadow-lg flex flex-col">
+                            <div className="aspect-square bg-white rounded-md overflow-hidden mb-4 relative flex items-center justify-center p-2">
+                              <img
+                                src={product.imageUrl}
+                                alt={product.name}
+                                loading="lazy"
+                                decoding="async"
+                                className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                              />
+                            </div>
+
+                            <div className="mb-2">
+                              <span className="text-xs font-bold text-accent uppercase tracking-wider">
+                                {product.category}
+                              </span>
+                            </div>
+
+                            <h3 className="font-bold text-xl mb-2 group-hover:text-primary transition-colors">
+                              {product.name}
+                            </h3>
+
+                            <p className="text-muted-foreground text-sm line-clamp-2 mb-4 flex-grow">
+                              {product.description}
+                            </p>
+
+                            <div className="mt-auto pt-4 border-t">
+                              <span className="text-sm font-medium text-primary flex items-center group-hover:underline">
+                                View Details
+                                <ArrowRight className="ml-1 h-3 w-3" />
+                              </span>
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
                     </div>
                   </div>
-                </Link>
-              ))}
+                )
+              )}
             </div>
+                    
           ) : (
             <div className="text-center py-12 border-2 border-dashed rounded-lg">
               <h3 className="text-lg font-medium text-muted-foreground">
