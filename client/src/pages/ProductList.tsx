@@ -75,7 +75,7 @@ export default function ProductList() {
     });
   const groupedProducts = filteredProducts?.reduce(
     (groups: Record<string, any[]>, product) => {
-      const group = product.subcategory || "Other";
+      const group = product.category || "Other";
 
       if (!groups[group]) {
         groups[group] = [];
@@ -150,7 +150,7 @@ export default function ProductList() {
         <div className="min-h-[400px]">
           {filteredProducts && filteredProducts.length > 0 ? (
             <div className="space-y-12">
-              Object.entries(groupedProducts ?? {}).map(
+              {Object.entries(groupedProducts ?? {}).map(
                 ([groupName, products]) => (
                   <div key={groupName}>
                     <h2 className="text-2xl font-bold mb-6 border-b pb-2">
